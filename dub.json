@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"UI Manufaktur UG"
+	],
+	"copyright": "Copyright © 2021, UIM",
+	"description": "A minimal D application.",
+	"license": "proprietary",
+	"name": "model-workflows"
+}

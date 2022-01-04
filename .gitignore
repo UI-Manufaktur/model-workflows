@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/model-workflow
+model-workflow.so
+model-workflow.dylib
+model-workflow.dll
+model-workflow.a
+model-workflow.lib
+model-workflow-test-*
+*.exe
+*.o
+*.obj
+*.lst
