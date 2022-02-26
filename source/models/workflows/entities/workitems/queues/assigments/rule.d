@@ -1,4 +1,4 @@
-module models.workflows.entities.workitems.queues.assignment_rule;
+module models.workflows.entities.workitems.queues.assigments.rule;
 
 @safe:
 import models.workflows;
@@ -21,7 +21,7 @@ class DWFLWorkItemQueueAssignmentRule : DOOPEntity {
         "WorkItemType": OOPStringAttribute.descriptions(["en":""]),
         "backingTable_WorkflowWorkItemQueueExpressionRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
       ])
-      .registerPath("workflow_elements");
+      .registerPath("workflow_workitemqueueassignmentrules");
   }
 }
 mixin(OOPEntityCalls!("WFLWorkItemQueueAssignmentRule"));

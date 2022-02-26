@@ -25,7 +25,8 @@ class DWFLSubworkflow : DOOPEntity {
         "Relationship_WorkflowVersionRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
         "Relationship_WorkflowParallelBranchRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
         "backingTable_WorkflowSubWorkflowRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
-      ]);
+      ])
+      .registerPath("workflow_subworkflows");
   }
 }
 mixin(OOPEntityCalls!("WFLSubworkflow"));

@@ -4,7 +4,7 @@ module models.workflows.entities.steps.step;
 import models.workflows;
 
 class DWFLStep : DOOPEntity {
-  mixin(OOPEntityThis!("WFLElement"));
+  mixin(OOPEntityThis!("WFLStep"));
   
   override void initialize() {
     super.initialize;

@@ -1,4 +1,4 @@
-module models.workflows.entities.workitems.queues.assignment;
+module models.workflows.entities.workitems.queues.assignments.assignment;
 
 @safe:
 import models.workflows;

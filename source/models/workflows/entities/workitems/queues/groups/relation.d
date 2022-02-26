@@ -1,4 +1,4 @@
-module models.workflows.entities.workitems.queues.group_relation;
+module models.workflows.entities.workitems.queues.groups.relation;
 
 @safe:
 import models.workflows;

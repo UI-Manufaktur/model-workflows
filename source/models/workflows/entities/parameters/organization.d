@@ -15,7 +15,7 @@ class DWFLParametersOrganization : DOOPEntity {
         "backingTable_WorkflowParametersRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
         "relationship_PrimaryCompanyContextRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
       ])
-      .registerPath("workflow_parametersorganizatiohs");
+      .registerPath("workflow_parametersorganizations");
   }
 }
 mixin(OOPEntityCalls!("WFLParametersOrganization")); 
