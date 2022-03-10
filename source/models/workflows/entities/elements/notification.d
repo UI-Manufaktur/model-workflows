@@ -10,7 +10,7 @@ class DWFLElementNotification : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "action": OOPStringAttribute.descriptions(["en":""]),
         "enabled": OOPStringAttribute.descriptions(["en":""]),
         "elementTable": OOPStringAttribute.descriptions(["en":""]),

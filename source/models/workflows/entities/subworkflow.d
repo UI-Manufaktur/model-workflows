@@ -10,7 +10,7 @@ class DWFLSubworkflow : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "DocumentKeyField": OOPStringAttribute.descriptions(["en":""]),
         "DocumentKeyTable": OOPStringAttribute.descriptions(["en":""]),
         "ElementId": OOPUUIDAttribute.descriptions(["en":""]),

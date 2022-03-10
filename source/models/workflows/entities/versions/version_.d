@@ -10,7 +10,7 @@ class DWFLVersion : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "activationConditionId": OOPUUIDAttribute.descriptions(["en":""]),
         "activationConditionType": OOPStringAttribute.descriptions(["en":""]),
         "workflowId": OOPUUIDAttribute.descriptions(["en":""]),

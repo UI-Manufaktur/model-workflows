@@ -10,7 +10,7 @@ class DWFLVersionNotificationMessage : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "languageId": OOPUUIDAttribute.descriptions(["en":""]),
         "text": OOPStringAttribute.descriptions(["en":""]),
         "eorkflowId": OOPUUIDAttribute.descriptions(["en":""]),

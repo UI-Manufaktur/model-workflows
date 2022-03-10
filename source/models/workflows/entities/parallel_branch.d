@@ -10,7 +10,7 @@ class DWFLParallelBranch : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "ElementId": OOPUUIDAttribute.descriptions(["en":""]),
         "Relationship_WorkflowElementRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
         "backingTable_WorkflowParallelBranchTableRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),

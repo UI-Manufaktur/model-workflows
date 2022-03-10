@@ -10,7 +10,7 @@ class DWFLStep : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "completionPolicy": OOPStringAttribute.descriptions(["en":""]),
         "completionPolicyPercentage": OOPStringAttribute.descriptions(["en":""]),
         "elementId": OOPUUIDAttribute.descriptions(["en":""]),

@@ -10,7 +10,7 @@ class DWFLElementAction : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "enabled": OOPStringAttribute.descriptions(["en":""]),
         "isOutcome": OOPStringAttribute.descriptions(["en":""]),
         "elementId": OOPUUIDAttribute.descriptions(["en":""]),

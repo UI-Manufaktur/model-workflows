@@ -10,7 +10,7 @@ class DWFLElement : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "conditionId": OOPUUIDAttribute.descriptions(["en":""]),
         "autoCompleteAction": OOPStringAttribute.descriptions(["en":""]),
         "autoCompleteConditionId": OOPUUIDAttribute.descriptions(["en":""]),

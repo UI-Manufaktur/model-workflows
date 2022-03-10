@@ -10,7 +10,7 @@ class DWFLWorkItemQueueGroupRelation : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "WorkflowWorkitemQueue": OOPStringAttribute.descriptions(["en":""]),
         "WorkflowWorkitemQueueGroup": OOPStringAttribute.descriptions(["en":""]),
         "WorkItemQueueName": OOPStringAttribute.descriptions(["en":""]),

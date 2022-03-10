@@ -10,7 +10,7 @@ class DWFLWorkItemQueueAssignee : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "isOwner": OOPStringAttribute.descriptions(["en":""]),
         "User": OOPStringAttribute.descriptions(["en":""]),
         "WorkitemQueue": OOPStringAttribute.descriptions(["en":""]),

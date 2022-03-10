@@ -10,7 +10,7 @@ class DWFLEscalationPath : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "channelId": OOPUUIDAttribute.descriptions(["en":""]),
         "channelDatabaseId": OOPUUIDAttribute.descriptions(["en":""]),
         "backingTable_WorkflowEscalationPathRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),

@@ -10,7 +10,7 @@ class DWFLElementOutcomeMessage : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "ChannelId": OOPUUIDAttribute.descriptions(["en":""]),
         "ChannelDatabaseId": OOPUUIDAttribute.descriptions(["en":""]),
         "backingTable_WorkflowElementOutcomeMessageRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),

@@ -10,7 +10,7 @@ class DWFLLineItem : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "sequence": OOPStringAttribute.descriptions(["en":""]),
         "expressionId": OOPUUIDAttribute.descriptions(["en":""]),
         "elementId": OOPUUIDAttribute.descriptions(["en":""]),

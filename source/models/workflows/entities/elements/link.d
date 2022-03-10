@@ -10,7 +10,7 @@ class DWFLElementLink : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "level": OOPStringAttribute.descriptions(["en":""]),
         "sequence": OOPStringAttribute.descriptions(["en":""]),
         "sourceType": OOPStringAttribute.descriptions(["en":""]),

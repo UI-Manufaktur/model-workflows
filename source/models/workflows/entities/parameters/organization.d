@@ -10,7 +10,7 @@ class DWFLParametersOrganization : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "workflowNotifications": OOPStringAttribute.descriptions(["en":""]),
         "backingTable_WorkflowParametersRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
         "relationship_PrimaryCompanyContextRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),

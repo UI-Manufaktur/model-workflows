@@ -10,7 +10,7 @@ class DWFLVersionNotification : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "Action": OOPStringAttribute.descriptions(["en":""]),
         "Enabled": OOPStringAttribute.descriptions(["en":""]),
         "WorkflowId": OOPUUIDAttribute.descriptions(["en":""]),

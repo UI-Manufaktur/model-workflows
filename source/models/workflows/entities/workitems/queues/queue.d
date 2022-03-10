@@ -10,7 +10,7 @@ class DWFLWorkItemQueue : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "Status": OOPStringAttribute.descriptions(["en":""]),
         "WorkItemType": OOPStringAttribute.descriptions(["en":""]),
         "WorkItemTypeFriendlyName": OOPStringAttribute.descriptions(["en":""]),

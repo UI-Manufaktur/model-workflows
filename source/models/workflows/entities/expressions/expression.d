@@ -10,7 +10,7 @@ class DWFLExpression : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "expressionClassName": OOPStringAttribute.descriptions(["en":""]),
         "xPathQuery": OOPStringAttribute.descriptions(["en":""]),
         "expressionDefinition": OOPStringAttribute.descriptions(["en":""]),

@@ -10,7 +10,7 @@ class DWFLParametersSystem : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "workflowExecutionUser": OOPStringAttribute.descriptions(["en":""]),
         "id": OOPUUIDAttribute.descriptions(["en":""]),
         "workflowNotifications": OOPStringAttribute.descriptions(["en":""]),

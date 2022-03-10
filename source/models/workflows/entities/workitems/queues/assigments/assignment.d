@@ -10,7 +10,7 @@ class DWFLWorkItemQueueAssignment : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "defaultQueueId": OOPLinkAttribute("queue").descriptions(["en":""]),
         "WorkitemType": OOPStringAttribute.descriptions(["en":""]),
         "DefaultWorkItemQueueName": OOPStringAttribute.descriptions(["en":""]),

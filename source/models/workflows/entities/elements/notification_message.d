@@ -10,7 +10,7 @@ class DWFLElementNotificationMessage : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "LanguageId": OOPUUIDAttribute.descriptions(["en":""]),
         "Text": OOPStringAttribute.descriptions(["en":""]),
         "ElementLinkSequence": OOPStringAttribute.descriptions(["en":""]),

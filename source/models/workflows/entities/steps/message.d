@@ -10,7 +10,7 @@ class DWFLStepMessage : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "languageId": OOPUUIDAttribute.descriptions(["en":""]),
         "text": OOPStringAttribute.descriptions(["en":""]),
         "stepId": OOPLinkAttribute("wflStep").descriptions(["en":""]),
