@@ -1,12 +1,11 @@
 module models.workflows.entities.workitems.queues;
 
-@safe:
-import models.workflows;
-
-// Main
+// Main entity
 public import models.workflows.entities.workitems.queues.queue;
 
-// Additional
+// Additional entities (modules)
 public import models.workflows.entities.workitems.queues.assignee;
+
+// Additional entities (packages)
 public import models.workflows.entities.workitems.queues.assignments;
 public import models.workflows.entities.workitems.queues.groups;

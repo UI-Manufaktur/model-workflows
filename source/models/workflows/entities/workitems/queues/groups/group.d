@@ -1,4 +1,4 @@
-module models.workflows.entities.workitems.queues.group;
+module models.workflows.entities.workitems.queues.groups.group;
 
 @safe:
 import models.workflows;

@@ -1,4 +1,4 @@
-module source.models.workflows.entities.elements.notifications.notification;
+module models.workflows.entities.elements.notifications.notification;
 
 @safe:
 import models.workflows;

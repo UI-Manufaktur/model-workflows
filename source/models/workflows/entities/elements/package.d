@@ -9,5 +9,5 @@ public import models.workflows.entities.elements.link;
 public import models.workflows.entities.elements.outcome_message;
 
 // Additional entities (packages)
-public import models.workflows.entities.elements.notification;
+public import models.workflows.entities.elements.notifications;
 
