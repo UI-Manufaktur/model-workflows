@@ -1,10 +1,10 @@
-module models.workflows.entities.elements.notification_message;
+module models.workflows.entities.elements.notifications.message;
 
 @safe:
 import models.workflows;
 
-class DWFLElementNotificationMessage : DOOPEntity {
-  mixin(OOPEntityThis!("WFLElementNotificationMessage"));
+class DWorkflowElementNotificationMessageEntity : DOOPEntity {
+  mixin(OOPEntityThis!("WorkflowElementNotificationMessageEntity"));
   
   override void initialize() {
     super.initialize;
@@ -23,13 +23,13 @@ class DWFLElementNotificationMessage : DOOPEntity {
       .registerPath("workflow_elementnotificationmessages");
   }
 }
-mixin(OOPEntityCalls!("WFLElementNotificationMessage"));
+mixin(OOPEntityCalls!("WorkflowElementNotificationMessageEntity"));
 
 version(test_model_workflows) {
   unittest {
-    assert(WFLElementNotificationMessage);
+    assert(WorkflowElementNotificationMessageEntity);
 
-  auto entity = WFLElementNotificationMessage;
+  auto entity = WorkflowElementNotificationMessageEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

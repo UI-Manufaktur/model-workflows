@@ -3,8 +3,8 @@ module models.workflows.entities.steps.message;
 @safe:
 import models.workflows;
 
-class DWFLStepMessage : DOOPEntity {
-  mixin(OOPEntityThis!("WFLStepMessage"));
+class DWorkflowStepMessageEntity : DOOPEntity {
+  mixin(OOPEntityThis!("WorkflowStepMessageEntity"));
   
   override void initialize() {
     super.initialize;
@@ -20,13 +20,13 @@ class DWFLStepMessage : DOOPEntity {
       .registerPath("workflow_stepmessages");
   }
 }
-mixin(OOPEntityCalls!("WFLStepMessage"));
+mixin(OOPEntityCalls!("WorkflowStepMessageEntity"));
 
 version(test_model_workflows) {
   unittest {
-    assert(WFLStepMessage);
+    assert(WorkflowStepMessageEntity);
 
-  auto entity = WFLStepMessage;
+  auto entity = WorkflowStepMessageEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

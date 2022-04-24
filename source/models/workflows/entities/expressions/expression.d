@@ -3,8 +3,8 @@ module models.workflows.entities.expressions.expression;
 @safe:
 import models.workflows;
 
-class DWFLExpression : DOOPEntity {
-  mixin(OOPEntityThis!("WFLExpression"));
+class DWorkflowExpressionEntity : DOOPEntity {
+  mixin(OOPEntityThis!("WorkflowExpressionEntity"));
   
   override void initialize() {
     super.initialize;
@@ -19,13 +19,13 @@ class DWFLExpression : DOOPEntity {
       .registerPath("workflow_expressions");
   }
 }
-mixin(OOPEntityCalls!("WFLExpression"));
+mixin(OOPEntityCalls!("WorkflowExpressionEntity"));
 
 version(test_model_workflows) {
   unittest {
-    assert(WFLExpression);
+    assert(WorkflowExpressionEntity);
 
-  auto entity = WFLExpression;
+  auto entity = WorkflowExpressionEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

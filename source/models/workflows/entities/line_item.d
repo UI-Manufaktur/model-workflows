@@ -3,8 +3,8 @@ module models.workflows.entities.line_item;
 @safe:
 import models.workflows;
 
-class DWFLLineItem : DOOPEntity {
-  mixin(OOPEntityThis!("WFLLineItem"));
+class DWorkflowLineItemEntity : DOOPEntity {
+  mixin(OOPEntityThis!("WorkflowLineItemEntity"));
   
   override void initialize() {
     super.initialize;
@@ -22,13 +22,13 @@ class DWFLLineItem : DOOPEntity {
       .registerPath("workflow_lineitems");
   }
 }
-mixin(OOPEntityCalls!("WFLLineItem"));
+mixin(OOPEntityCalls!("WorkflowLineItemEntity"));
 
 version(test_model_workflows) {
   unittest {
-    assert(WFLLineItem);
+    assert(WorkflowLineItemEntity);
 
-  auto entity = WFLLineItem;
+  auto entity = WorkflowLineItemEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

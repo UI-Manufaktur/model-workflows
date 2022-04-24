@@ -3,8 +3,8 @@ module models.workflows.entities.elements.element;
 @safe:
 import models.workflows;
 
-class DWFLElement : DOOPEntity {
-  mixin(OOPEntityThis!("WFLElement"));
+class DWorkflowElementEntity : DOOPEntity {
+  mixin(OOPEntityThis!("WorkflowElementEntity"));
   
   override void initialize() {
     super.initialize;
@@ -76,13 +76,13 @@ class DWFLElement : DOOPEntity {
     .registerPath("workflow_elements");
   }
 }
-mixin(OOPEntityCalls!("WFLElement"));
+mixin(OOPEntityCalls!("WorkflowElementEntity"));
 
 version(test_model_workflows) {
   unittest {
-    assert(WFLElement);
+    assert(WorkflowElementEntity);
 
-  auto entity = WFLElement;
+  auto entity = WorkflowElementEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

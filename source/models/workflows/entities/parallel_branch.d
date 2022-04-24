@@ -3,8 +3,8 @@ module models.workflows.entities.parallel_branch;
 @safe:
 import models.workflows;
 
-class DWFLParallelBranch : DOOPEntity {
-  mixin(OOPEntityThis!("WFLParallelBranch"));
+class DWorkflowParallelBranchEntity : DOOPEntity {
+  mixin(OOPEntityThis!("WorkflowParallelBranchEntity"));
   
   override void initialize() {
     super.initialize;
@@ -18,13 +18,13 @@ class DWFLParallelBranch : DOOPEntity {
       .registerPath("workflow_parallelbranches");
   }
 }
-mixin(OOPEntityCalls!("WFLParallelBranch"));
+mixin(OOPEntityCalls!("WorkflowParallelBranchEntity"));
 
 version(test_model_workflows) {
   unittest {
-    assert(WFLParallelBranch);
+    assert(WorkflowParallelBranchEntity);
 
-  auto entity = WFLParallelBranch;
+  auto entity = WorkflowParallelBranchEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

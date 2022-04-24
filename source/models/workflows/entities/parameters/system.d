@@ -3,8 +3,8 @@ module models.workflows.entities.parameters.system;
 @safe:
 import models.workflows;
 
-class DWFLParametersSystem : DOOPEntity {
-  mixin(OOPEntityThis!("WFLParametersSystem"));
+class DWorkflowParametersSystemEntity : DOOPEntity {
+  mixin(OOPEntityThis!("WorkflowParametersSystemEntity"));
   
   override void initialize() {
     super.initialize;
@@ -22,13 +22,13 @@ class DWFLParametersSystem : DOOPEntity {
       .registerPath("workflow_parameterssystems");
   }
 }
-mixin(OOPEntityCalls!("WFLParametersSystem"));
+mixin(OOPEntityCalls!("WorkflowParametersSystemEntity"));
 
 version(test_model_workflows) {
   unittest {
-    assert(WFLParametersSystem);
+    assert(WorkflowParametersSystemEntity);
 
-  auto entity = WFLParametersSystem;
+  auto entity = WorkflowParametersSystemEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

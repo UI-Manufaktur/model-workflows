@@ -1,9 +1,38 @@
 {
-	"authors": [
-		"UI Manufaktur UG"
+	"authors": ["UI Manufaktur UG"],
+	"copyright": "Copyright © 2017 - 2020, UI Manufaktur UG",
+	"description": "Model for workflows applications",
+	"license": "MIT",
+	"name": "model-workflows",
+"dependencies": {
+	"colored": "~>0.0.23",
+	"vibe-d": "~>0.9.4"
+},
+	"sourcePaths": [
+			"../../LIBS/uim-core",
+			"../../LIBS/uim-oop",
+			"../../LIBS/uim-models",
+			"../../LIBS/uim-jsonbase",
+	"../../LIBS/uim-entities",
+	"../../LIBS/uim-entitybase",
+			"./"
 	],
-	"copyright": "Copyright © 2021, UIM",
-	"description": "A minimal D application.",
-	"license": "proprietary",
-	"name": "model-workflows"
+	"importPaths": [
+			"../../LIBS/uim-core",
+			"../../LIBS/uim-oop",
+			"../../LIBS/uim-models",
+			"../../LIBS/uim-jsonbase",
+	"../../LIBS/uim-entities",
+	"../../LIBS/uim-entitybase",
+			"./"
+	],
+"configurations": [
+	{
+		"name": "offline"
+	},
+	{
+		"name": "model_workflows",
+		"versions": ["test_model_workflows"]
+	}
+]
 }

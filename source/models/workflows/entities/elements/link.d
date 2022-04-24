@@ -3,8 +3,8 @@ module models.workflows.entities.elements.link;
 @safe:
 import models.workflows;
 
-class DWFLElementLink : DOOPEntity {
-  mixin(OOPEntityThis!("WFLElementLink"));
+class DWorkflowElementLinkEntity : DOOPEntity {
+  mixin(OOPEntityThis!("WorkflowElementLinkEntity"));
   
   override void initialize() {
     super.initialize;
@@ -34,13 +34,13 @@ class DWFLElementLink : DOOPEntity {
       .registerPath("workflow_elementlinks");
   }
 }
-mixin(OOPEntityCalls!("WFLElementLink"));
+mixin(OOPEntityCalls!("WorkflowElementLinkEntity"));
 
 version(test_model_workflows) {
   unittest {
-    assert(WFLElementLink);
+    assert(WorkflowElementLinkEntity);
 
-  auto entity = WFLElementLink;
+  auto entity = WorkflowElementLinkEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

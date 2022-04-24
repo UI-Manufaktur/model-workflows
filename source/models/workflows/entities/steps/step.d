@@ -3,8 +3,8 @@ module models.workflows.entities.steps.step;
 @safe:
 import models.workflows;
 
-class DWFLStep : DOOPEntity {
-  mixin(OOPEntityThis!("WFLStep"));
+class DWorkflowStepEntity : DOOPEntity {
+  mixin(OOPEntityThis!("WorkflowStepEntity"));
   
   override void initialize() {
     super.initialize;
@@ -17,7 +17,7 @@ class DWFLStep : DOOPEntity {
         "runStep": OOPStringAttribute.descriptions(["en":""]),
         "runStepConditionId": OOPUUIDAttribute.descriptions(["en":""]),
         "sequence": OOPStringAttribute.descriptions(["en":""]),
-        "stepId": OOPLinkAttribute("wflStep").descriptions(["en":""]),
+        "stepId": OOPLinkAttribute("WorkflowStepEntity").descriptions(["en":""]),
         "workflowUserValue": OOPStringAttribute.descriptions(["en":""]),
         "assignmentRelationType": OOPStringAttribute.descriptions(["en":""]),
         "assignmentType": OOPStringAttribute.descriptions(["en":""]),
@@ -76,13 +76,13 @@ class DWFLStep : DOOPEntity {
       .registerPath("workflow_steps");
   }
 }
-mixin(OOPEntityCalls!("WFLStep"));
+mixin(OOPEntityCalls!("WorkflowStepEntity"));
 
 version(test_model_workflows) {
   unittest {
-    assert(WFLStep);
+    assert(WorkflowStepEntity);
 
-  auto entity = WFLStep;
+  auto entity = WorkflowStepEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

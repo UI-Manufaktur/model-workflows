@@ -3,8 +3,8 @@ module models.workflows.entities.elements.outcome_message;
 @safe:
 import models.workflows;
 
-class DWFLElementOutcomeMessage : DOOPEntity {
-  mixin(OOPEntityThis!("WFLElementOutcomeMessage"));
+class DWorkflowElementOutcomeMessageEntity : DOOPEntity {
+  mixin(OOPEntityThis!("WorkflowElementOutcomeMessageEntity"));
   
   override void initialize() {
     super.initialize;
@@ -18,13 +18,13 @@ class DWFLElementOutcomeMessage : DOOPEntity {
       .registerPath("workflow_elementoutcomemessages");
   }
 }
-mixin(OOPEntityCalls!("WFLElementOutcomeMessage"));
+mixin(OOPEntityCalls!("WorkflowElementOutcomeMessageEntity"));
 
 version(test_model_workflows) {
   unittest {
-    assert(WFLElementOutcomeMessage);
+    assert(WorkflowElementOutcomeMessageEntity);
 
-  auto entity = WFLElementOutcomeMessage;
+  auto entity = WorkflowElementOutcomeMessageEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 
