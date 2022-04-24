@@ -3,31 +3,31 @@ module models.workflows.entities.workitems.queues.groups.relation;
 @safe:
 import models.workflows;
 
-class DWFLWorkItemQueueGroupRelation : DOOPEntity {
-  mixin(OOPEntityThis!("WFLWorkItemQueueGroupRelation"));
+class DWorkflowWorkItemQueueGroupRelationEntity : DOOPEntity {
+  mixin(OOPEntityThis!("WorkflowWorkItemQueueGroupRelationEntity"));
   
   override void initialize() {
     super.initialize;
 
     this
       .addAttributes([
-        "WorkflowWorkitemQueue": OOPStringAttribute.descriptions(["en":""]),
-        "WorkflowWorkitemQueueGroup": OOPStringAttribute.descriptions(["en":""]),
-        "WorkItemQueueName": OOPStringAttribute.descriptions(["en":""]),
-        "WorkItemQueueType": OOPStringAttribute.descriptions(["en":""]),
-        "WorkItemQueueGroupName": OOPStringAttribute.descriptions(["en":""]),
+        "workflowWorkitemQueue": OOPStringAttribute.descriptions(["en":""]),
+        "workflowWorkitemQueueGroup": OOPStringAttribute.descriptions(["en":""]),
+        "workItemQueueName": OOPStringAttribute.descriptions(["en":""]),
+        "workItemQueueType": OOPStringAttribute.descriptions(["en":""]),
+        "workItemQueueGroupName": OOPStringAttribute.descriptions(["en":""]),
         "backingTable_WorkflowWorkItemQueueGroupRelationRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
       ])
       .registerPath("workflow_workitemqueuegrouprelations");
   }
 }
-mixin(OOPEntityCalls!("WFLWorkItemQueueGroupRelation"));
+mixin(OOPEntityCalls!("WorkflowWorkItemQueueGroupRelationEntity"));
 
 version(test_model_workflows) {
   unittest {
-    assert(WFLWorkItemQueueGroupRelation);
+    assert(WorkflowWorkItemQueueGroupRelationEntity);
 
-  auto entity = WFLWorkItemQueueGroupRelation;
+  auto entity = WorkflowWorkItemQueueGroupRelationEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

@@ -3,8 +3,8 @@ module models.workflows.entities.subworkflow;
 @safe:
 import models.workflows;
 
-class DWFLSubworkflow : DOOPEntity {
-  mixin(OOPEntityThis!("WFLSubworkflow"));
+class DWorkflowSubworkflowEntity : DOOPEntity {
+  mixin(OOPEntityThis!("WorkflowSubworkflowEntity"));
   
   override void initialize() {
     super.initialize;
@@ -29,14 +29,14 @@ class DWFLSubworkflow : DOOPEntity {
       .registerPath("workflow_subworkflows");
   }
 }
-mixin(OOPEntityCalls!("WFLSubworkflow"));
+mixin(OOPEntityCalls!("WorkflowSubworkflowEntity"));
 
 
 version(test_model_workflows) {
   unittest {
-    assert(WFLSubworkflow);
+    assert(WorkflowSubworkflowEntity);
 
-  auto entity = WFLSubworkflow;
+  auto entity = WorkflowSubworkflowEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

@@ -3,8 +3,8 @@ module models.workflows.entities.versions.notes;
 @safe:
 import models.workflows;
 
-class DWFLVersionNote : DOOPEntity {
-  mixin(OOPEntityThis!("WFLVersionNote"));
+class DWorkflowVersionNotesEntity : DOOPEntity {
+  mixin(OOPEntityThis!("WorkflowVersionNotesEntity"));
   
   override void initialize() {
     super.initialize;
@@ -19,13 +19,13 @@ class DWFLVersionNote : DOOPEntity {
       .registerPath("workflow_versionnotes");
   }
 }
-mixin(OOPEntityCalls!("WFLVersionNote"));
+mixin(OOPEntityCalls!("WorkflowVersionNotesEntity"));
 
 version(test_model_workflows) {
   unittest {
-    assert(WFLVersionNotes);
+    assert(WorkflowVersionNotesEntitys);
 
-  auto entity = WFLVersionNotes;
+  auto entity = WorkflowVersionNotesEntitys;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

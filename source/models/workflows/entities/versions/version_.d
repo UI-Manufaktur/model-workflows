@@ -3,8 +3,8 @@ module models.workflows.entities.versions.version_;
 @safe:
 import models.workflows;
 
-class DWFLVersion : DOOPEntity {
-  mixin(OOPEntityThis!("WFLVersion"));
+class DWorkflowVersionEntity : DOOPEntity {
+  mixin(OOPEntityThis!("WorkflowVersionEntity"));
   
   override void initialize() {
     super.initialize;
@@ -39,13 +39,13 @@ class DWFLVersion : DOOPEntity {
       .registerPath("workflow_versions");
   }
 }
-mixin(OOPEntityCalls!("WFLVersion"));
+mixin(OOPEntityCalls!("WorkflowVersionEntity"));
 
 version(test_model_workflows) {
   unittest {
-    assert(WFLVersion);
+    assert(WorkflowVersionEntity);
 
-  auto entity = WFLVersion;
+  auto entity = WorkflowVersionEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

@@ -3,8 +3,8 @@ module models.workflows.entities.workitems.queues.assignments.assignment;
 @safe:
 import models.workflows;
 
-class DWFLWorkItemQueueAssignment : DOOPEntity {
-  mixin(OOPEntityThis!("WFLWorkItemQueueAssignment"));
+class DWorkflowWorkItemQueueAssignmentEntity : DOOPEntity {
+  mixin(OOPEntityThis!("WorkflowWorkItemQueueAssignmentEntity"));
   
   override void initialize() {
     super.initialize;
@@ -20,13 +20,13 @@ class DWFLWorkItemQueueAssignment : DOOPEntity {
       .registerPath("workflow_workitemqueueassignments");
   }
 }
-mixin(OOPEntityCalls!("WFLWorkItemQueueAssignment")); 
+mixin(OOPEntityCalls!("WorkflowWorkItemQueueAssignmentEntity")); 
 
 version(test_model_workflows) {
   unittest {
-    assert(WFLWorkItemQueueAssignment);
+    assert(WorkflowWorkItemQueueAssignmentEntity);
 
-  auto entity = WFLWorkItemQueueAssignment;
+  auto entity = WorkflowWorkItemQueueAssignmentEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

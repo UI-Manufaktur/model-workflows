@@ -3,8 +3,8 @@ module models.workflows.entities.workitems.queues.group;
 @safe:
 import models.workflows;
 
-class DWFLWorkItemQueueGroup : DOOPEntity {
-  mixin(OOPEntityThis!("WFLWorkItemQueueGroup"));
+class DWorkflowWorkItemQueueGroupEntity : DOOPEntity {
+  mixin(OOPEntityThis!("WorkflowWorkItemQueueGroupEntity"));
   
   override void initialize() {
     super.initialize;
@@ -16,13 +16,13 @@ class DWFLWorkItemQueueGroup : DOOPEntity {
       .registerPath("workflow_workitemqueuegroups");
   }
 }
-mixin(OOPEntityCalls!("WFLWorkItemQueueGroup"));
+mixin(OOPEntityCalls!("WorkflowWorkItemQueueGroupEntity"));
 
 version(test_model_workflows) {
   unittest {
-    assert(WFLWorkItemQueueGroup);
+    assert(WorkflowWorkItemQueueGroupEntity);
 
-  auto entity = WFLWorkItemQueueGroup;
+  auto entity = WorkflowWorkItemQueueGroupEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

@@ -3,8 +3,8 @@ module models.workflows.entities.versions.notifications.notification;
 @safe:
 import models.workflows;
 
-class DWFLVersionNotification : DOOPEntity {
-  mixin(OOPEntityThis!("WFLVersionNotification"));
+class DWorkflowVersionNotificationEntity : DOOPEntity {
+  mixin(OOPEntityThis!("WorkflowVersionNotificationEntity"));
   
   override void initialize() {
     super.initialize;
@@ -33,13 +33,13 @@ class DWFLVersionNotification : DOOPEntity {
       .registerPath("workflow_versionnotifications");
   }
 }
-mixin(OOPEntityCalls!("WFLVersionNotification"));
+mixin(OOPEntityCalls!("WorkflowVersionNotificationEntity"));
 
 version(test_model_workflows) {
   unittest {
-    assert(WFLVersionNotification);
+    assert(WorkflowVersionNotificationEntity);
 
-  auto entity = WFLVersionNotification;
+  auto entity = WorkflowVersionNotificationEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 
