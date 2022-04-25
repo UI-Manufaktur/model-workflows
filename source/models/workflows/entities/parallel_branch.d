@@ -4,7 +4,7 @@ module models.workflows.entities.parallel_branch;
 import models.workflows;
 
 class DWorkflowParallelBranchEntity : DOOPEntity {
-  mixin(OOPEntityThis!("WorkflowParallelBranchEntity"));
+  mixin(EntityThis!("WorkflowParallelBranchEntity"));
   
   override void initialize() {
     super.initialize;
@@ -18,7 +18,7 @@ class DWorkflowParallelBranchEntity : DOOPEntity {
       .registerPath("workflow_parallelbranches");
   }
 }
-mixin(OOPEntityCalls!("WorkflowParallelBranchEntity"));
+mixin(EntityCalls!("WorkflowParallelBranchEntity"));
 
 version(test_model_workflows) {
   unittest {

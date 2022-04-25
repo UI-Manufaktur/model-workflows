@@ -4,7 +4,7 @@ module models.workflows.entities.expressions.expression;
 import models.workflows;
 
 class DWorkflowExpressionEntity : DOOPEntity {
-  mixin(OOPEntityThis!("WorkflowExpressionEntity"));
+  mixin(EntityThis!("WorkflowExpressionEntity"));
   
   override void initialize() {
     super.initialize;
@@ -19,7 +19,7 @@ class DWorkflowExpressionEntity : DOOPEntity {
       .registerPath("workflow_expressions");
   }
 }
-mixin(OOPEntityCalls!("WorkflowExpressionEntity"));
+mixin(EntityCalls!("WorkflowExpressionEntity"));
 
 version(test_model_workflows) {
   unittest {

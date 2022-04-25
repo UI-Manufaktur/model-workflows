@@ -4,7 +4,7 @@ module models.workflows.entities.versions.notes;
 import models.workflows;
 
 class DWorkflowVersionNotesEntity : DOOPEntity {
-  mixin(OOPEntityThis!("WorkflowVersionNotesEntity"));
+  mixin(EntityThis!("WorkflowVersionNotesEntity"));
   
   override void initialize() {
     super.initialize;
@@ -19,7 +19,7 @@ class DWorkflowVersionNotesEntity : DOOPEntity {
       .registerPath("workflow_versionnotes");
   }
 }
-mixin(OOPEntityCalls!("WorkflowVersionNotesEntity"));
+mixin(EntityCalls!("WorkflowVersionNotesEntity"));
 
 version(test_model_workflows) {
   unittest {

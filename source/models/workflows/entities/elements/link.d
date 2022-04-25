@@ -4,7 +4,7 @@ module models.workflows.entities.elements.link;
 import models.workflows;
 
 class DWorkflowElementLinkEntity : DOOPEntity {
-  mixin(OOPEntityThis!("WorkflowElementLinkEntity"));
+  mixin(EntityThis!("WorkflowElementLinkEntity"));
   
   override void initialize() {
     super.initialize;
@@ -34,7 +34,7 @@ class DWorkflowElementLinkEntity : DOOPEntity {
       .registerPath("workflow_elementlinks");
   }
 }
-mixin(OOPEntityCalls!("WorkflowElementLinkEntity"));
+mixin(EntityCalls!("WorkflowElementLinkEntity"));
 
 version(test_model_workflows) {
   unittest {

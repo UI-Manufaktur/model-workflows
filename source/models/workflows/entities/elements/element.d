@@ -4,7 +4,7 @@ module models.workflows.entities.elements.element;
 import models.workflows;
 
 class DWorkflowElementEntity : DOOPEntity {
-  mixin(OOPEntityThis!("WorkflowElementEntity"));
+  mixin(EntityThis!("WorkflowElementEntity"));
   
   override void initialize() {
     super.initialize;
@@ -76,7 +76,7 @@ class DWorkflowElementEntity : DOOPEntity {
     .registerPath("workflow_elements");
   }
 }
-mixin(OOPEntityCalls!("WorkflowElementEntity"));
+mixin(EntityCalls!("WorkflowElementEntity"));
 
 version(test_model_workflows) {
   unittest {

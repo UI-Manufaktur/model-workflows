@@ -4,7 +4,7 @@ module models.workflows.entities.versions.version_;
 import models.workflows;
 
 class DWorkflowVersionEntity : DOOPEntity {
-  mixin(OOPEntityThis!("WorkflowVersionEntity"));
+  mixin(EntityThis!("WorkflowVersionEntity"));
   
   override void initialize() {
     super.initialize;
@@ -39,7 +39,7 @@ class DWorkflowVersionEntity : DOOPEntity {
       .registerPath("workflow_versions");
   }
 }
-mixin(OOPEntityCalls!("WorkflowVersionEntity"));
+mixin(EntityCalls!("WorkflowVersionEntity"));
 
 version(test_model_workflows) {
   unittest {

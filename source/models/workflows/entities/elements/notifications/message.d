@@ -4,7 +4,7 @@ module models.workflows.entities.elements.notifications.message;
 import models.workflows;
 
 class DWorkflowElementNotificationMessageEntity : DOOPEntity {
-  mixin(OOPEntityThis!("WorkflowElementNotificationMessageEntity"));
+  mixin(EntityThis!("WorkflowElementNotificationMessageEntity"));
   
   override void initialize() {
     super.initialize;
@@ -23,7 +23,7 @@ class DWorkflowElementNotificationMessageEntity : DOOPEntity {
       .registerPath("workflow_elementnotificationmessages");
   }
 }
-mixin(OOPEntityCalls!("WorkflowElementNotificationMessageEntity"));
+mixin(EntityCalls!("WorkflowElementNotificationMessageEntity"));
 
 version(test_model_workflows) {
   unittest {

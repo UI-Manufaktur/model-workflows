@@ -4,7 +4,7 @@ module models.workflows.entities.steps.message;
 import models.workflows;
 
 class DWorkflowStepMessageEntity : DOOPEntity {
-  mixin(OOPEntityThis!("WorkflowStepMessageEntity"));
+  mixin(EntityThis!("WorkflowStepMessageEntity"));
   
   override void initialize() {
     super.initialize;
@@ -20,7 +20,7 @@ class DWorkflowStepMessageEntity : DOOPEntity {
       .registerPath("workflow_stepmessages");
   }
 }
-mixin(OOPEntityCalls!("WorkflowStepMessageEntity"));
+mixin(EntityCalls!("WorkflowStepMessageEntity"));
 
 version(test_model_workflows) {
   unittest {

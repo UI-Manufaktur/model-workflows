@@ -4,7 +4,7 @@ module models.workflows.entities.versions.notifications.message;
 import models.workflows;
 
 class DWorkflowVersionNotificationMessageEntity : DOOPEntity {
-  mixin(OOPEntityThis!("WorkflowVersionNotificationMessageEntity"));
+  mixin(EntityThis!("WorkflowVersionNotificationMessageEntity"));
   
   override void initialize() {
     super.initialize;
@@ -20,7 +20,7 @@ class DWorkflowVersionNotificationMessageEntity : DOOPEntity {
       .registerPath("workflow_versionnotificationmessages");
   }
 }
-mixin(OOPEntityCalls!("WorkflowVersionNotificationMessageEntity"));
+mixin(EntityCalls!("WorkflowVersionNotificationMessageEntity"));
 
 version(test_model_workflows) {
   unittest {

@@ -4,7 +4,7 @@ module models.workflows.entities.workitems.queues.groups.group;
 import models.workflows;
 
 class DWorkflowWorkItemQueueGroupEntity : DOOPEntity {
-  mixin(OOPEntityThis!("WorkflowWorkItemQueueGroupEntity"));
+  mixin(EntityThis!("WorkflowWorkItemQueueGroupEntity"));
   
   override void initialize() {
     super.initialize;
@@ -16,7 +16,7 @@ class DWorkflowWorkItemQueueGroupEntity : DOOPEntity {
       .registerPath("workflow_workitemqueuegroups");
   }
 }
-mixin(OOPEntityCalls!("WorkflowWorkItemQueueGroupEntity"));
+mixin(EntityCalls!("WorkflowWorkItemQueueGroupEntity"));
 
 version(test_model_workflows) {
   unittest {

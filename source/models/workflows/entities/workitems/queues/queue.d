@@ -4,7 +4,7 @@ module models.workflows.entities.workitems.queues.queue;
 import models.workflows;
 
 class DWFLWorkItemQueue : DOOPEntity {
-  mixin(OOPEntityThis!("WFLWorkItemQueue"));
+  mixin(EntityThis!("WFLWorkItemQueue"));
   
   override void initialize() {
     super.initialize;
@@ -19,7 +19,7 @@ class DWFLWorkItemQueue : DOOPEntity {
       .registerPath("workflow_workitemqueues");
   }
 }
-mixin(OOPEntityCalls!("WFLWorkItemQueue"));
+mixin(EntityCalls!("WFLWorkItemQueue"));
 
 version(test_model_workflows) {
   unittest {

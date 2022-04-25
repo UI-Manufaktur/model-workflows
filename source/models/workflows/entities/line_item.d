@@ -4,7 +4,7 @@ module models.workflows.entities.line_item;
 import models.workflows;
 
 class DWorkflowLineItemEntity : DOOPEntity {
-  mixin(OOPEntityThis!("WorkflowLineItemEntity"));
+  mixin(EntityThis!("WorkflowLineItemEntity"));
   
   override void initialize() {
     super.initialize;
@@ -22,7 +22,7 @@ class DWorkflowLineItemEntity : DOOPEntity {
       .registerPath("workflow_lineitems");
   }
 }
-mixin(OOPEntityCalls!("WorkflowLineItemEntity"));
+mixin(EntityCalls!("WorkflowLineItemEntity"));
 
 version(test_model_workflows) {
   unittest {

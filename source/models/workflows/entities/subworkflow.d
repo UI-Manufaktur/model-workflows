@@ -4,7 +4,7 @@ module models.workflows.entities.subworkflow;
 import models.workflows;
 
 class DWorkflowSubworkflowEntity : DOOPEntity {
-  mixin(OOPEntityThis!("WorkflowSubworkflowEntity"));
+  mixin(EntityThis!("WorkflowSubworkflowEntity"));
   
   override void initialize() {
     super.initialize;
@@ -29,7 +29,7 @@ class DWorkflowSubworkflowEntity : DOOPEntity {
       .registerPath("workflow_subworkflows");
   }
 }
-mixin(OOPEntityCalls!("WorkflowSubworkflowEntity"));
+mixin(EntityCalls!("WorkflowSubworkflowEntity"));
 
 
 version(test_model_workflows) {

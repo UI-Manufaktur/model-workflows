@@ -4,7 +4,7 @@ module models.workflows.entities.parameters.organization;
 import models.workflows;
 
 class DWorkflowParametersOrganizationEntity : DOOPEntity {
-  mixin(OOPEntityThis!("WorkflowParametersOrganizationEntity"));
+  mixin(EntityThis!("WorkflowParametersOrganizationEntity"));
   
   override void initialize() {
     super.initialize;
@@ -18,7 +18,7 @@ class DWorkflowParametersOrganizationEntity : DOOPEntity {
       .registerPath("workflow_parametersorganizations");
   }
 }
-mixin(OOPEntityCalls!("WorkflowParametersOrganizationEntity")); 
+mixin(EntityCalls!("WorkflowParametersOrganizationEntity")); 
 
 version(test_model_workflows) {
   unittest {

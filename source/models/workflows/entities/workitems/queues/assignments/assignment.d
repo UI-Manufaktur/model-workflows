@@ -4,7 +4,7 @@ module models.workflows.entities.workitems.queues.assignments.assignment;
 import models.workflows;
 
 class DWorkflowWorkItemQueueAssignmentEntity : DOOPEntity {
-  mixin(OOPEntityThis!("WorkflowWorkItemQueueAssignmentEntity"));
+  mixin(EntityThis!("WorkflowWorkItemQueueAssignmentEntity"));
   
   override void initialize() {
     super.initialize;
@@ -20,7 +20,7 @@ class DWorkflowWorkItemQueueAssignmentEntity : DOOPEntity {
       .registerPath("workflow_workitemqueueassignments");
   }
 }
-mixin(OOPEntityCalls!("WorkflowWorkItemQueueAssignmentEntity")); 
+mixin(EntityCalls!("WorkflowWorkItemQueueAssignmentEntity")); 
 
 version(test_model_workflows) {
   unittest {

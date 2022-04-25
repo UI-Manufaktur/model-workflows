@@ -4,7 +4,7 @@ module models.workflows.entities.workitems.queues.groups.relation;
 import models.workflows;
 
 class DWorkflowWorkItemQueueGroupRelationEntity : DOOPEntity {
-  mixin(OOPEntityThis!("WorkflowWorkItemQueueGroupRelationEntity"));
+  mixin(EntityThis!("WorkflowWorkItemQueueGroupRelationEntity"));
   
   override void initialize() {
     super.initialize;
@@ -21,7 +21,7 @@ class DWorkflowWorkItemQueueGroupRelationEntity : DOOPEntity {
       .registerPath("workflow_workitemqueuegrouprelations");
   }
 }
-mixin(OOPEntityCalls!("WorkflowWorkItemQueueGroupRelationEntity"));
+mixin(EntityCalls!("WorkflowWorkItemQueueGroupRelationEntity"));
 
 version(test_model_workflows) {
   unittest {

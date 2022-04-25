@@ -4,7 +4,7 @@ module models.workflows.entities.workitems.queues.assignments.rule;
 import models.workflows;
 
 class DWorkflowWorkItemQueueAssignmentRuleEntity : DOOPEntity {
-  mixin(OOPEntityThis!("WorkflowWorkItemQueueAssignmentRuleEntity"));
+  mixin(EntityThis!("WorkflowWorkItemQueueAssignmentRuleEntity"));
   
   override void initialize() {
     super.initialize;
@@ -24,7 +24,7 @@ class DWorkflowWorkItemQueueAssignmentRuleEntity : DOOPEntity {
       .registerPath("workflow_workitemqueueassignmentrules");
   }
 }
-mixin(OOPEntityCalls!("WorkflowWorkItemQueueAssignmentRuleEntity"));
+mixin(EntityCalls!("WorkflowWorkItemQueueAssignmentRuleEntity"));
 
 version(test_model_workflows) {
   unittest {

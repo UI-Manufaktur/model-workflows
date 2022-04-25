@@ -4,7 +4,7 @@ module models.workflows.entities.workitems.queues.assignee;
 import models.workflows;
 
 class DWorkflowWorkItemQueueAssigneeEntity : DOOPEntity {
-  mixin(OOPEntityThis!("WorkflowWorkItemQueueAssigneeEntity"));
+  mixin(EntityThis!("WorkflowWorkItemQueueAssigneeEntity"));
   
   override void initialize() {
     super.initialize;
@@ -21,7 +21,7 @@ class DWorkflowWorkItemQueueAssigneeEntity : DOOPEntity {
       .registerPath("workflow_workitemqueueassignees");
   }
 }
-mixin(OOPEntityCalls!("WorkflowWorkItemQueueAssigneeEntity"));
+mixin(EntityCalls!("WorkflowWorkItemQueueAssigneeEntity"));
 
 version(test_model_workflows) {
   unittest {

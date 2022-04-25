@@ -4,7 +4,7 @@ module models.workflows.entities.elements.outcome_message;
 import models.workflows;
 
 class DWorkflowElementOutcomeMessageEntity : DOOPEntity {
-  mixin(OOPEntityThis!("WorkflowElementOutcomeMessageEntity"));
+  mixin(EntityThis!("WorkflowElementOutcomeMessageEntity"));
   
   override void initialize() {
     super.initialize;
@@ -18,7 +18,7 @@ class DWorkflowElementOutcomeMessageEntity : DOOPEntity {
       .registerPath("workflow_elementoutcomemessages");
   }
 }
-mixin(OOPEntityCalls!("WorkflowElementOutcomeMessageEntity"));
+mixin(EntityCalls!("WorkflowElementOutcomeMessageEntity"));
 
 version(test_model_workflows) {
   unittest {

@@ -4,7 +4,7 @@ module models.workflows.entities.escalation_path;
 import models.workflows;
 
 class DWorkflowEscalationPathEntity : DOOPEntity {
-  mixin(OOPEntityThis!("WorkflowEscalationPathEntity"));
+  mixin(EntityThis!("WorkflowEscalationPathEntity"));
   
   override void initialize() {
     super.initialize;
@@ -66,7 +66,7 @@ BackingTable_WorkflowEscalationPathTableRelationshipId	 */
       .registerPath("workflow_escalationpaths");
   }
 }
-mixin(OOPEntityCalls!("WorkflowEscalationPathEntity"));
+mixin(EntityCalls!("WorkflowEscalationPathEntity"));
 
 version(test_model_workflows) {
   unittest {
