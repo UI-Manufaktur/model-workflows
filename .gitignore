@@ -14,3 +14,4 @@ model-workflow-test-*
 *.obj
 *.lst
 model-workflows-test-offline
+dub.selections.json
