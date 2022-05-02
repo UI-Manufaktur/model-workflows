@@ -13,3 +13,4 @@ model-workflow-test-*
 *.o
 *.obj
 *.lst
+model-workflows-test-offline

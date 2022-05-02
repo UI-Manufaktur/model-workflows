@@ -10,7 +10,7 @@ class DWorkflowElementLinkEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "level": StringAttributeClass, // "]),
         "sequence": StringAttributeClass, // "]),
         "sourceType": StringAttributeClass, // "]),

@@ -10,7 +10,7 @@ class DWorkflowElementActionEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "enabled": StringAttributeClass, // "]),
         "isOutcome": StringAttributeClass, // "]),
         "elementId": UUIDAttributeClass, // "]),

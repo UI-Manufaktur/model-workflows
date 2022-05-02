@@ -10,7 +10,7 @@ class DWorkflowElementEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "conditionId": UUIDAttributeClass, // "]),
         "autoCompleteAction": StringAttributeClass, // "]),
         "autoCompleteConditionId": UUIDAttributeClass, // "]),
