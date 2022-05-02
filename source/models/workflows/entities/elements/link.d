@@ -11,25 +11,25 @@ class DWorkflowElementLinkEntity : DOOPEntity {
 
     this
       .addValues([
-        "level": StringAttributeClass, // "]),
-        "sequence": StringAttributeClass, // "]),
-        "sourceType": StringAttributeClass, // "]),
-        "targetType": StringAttributeClass, // "]),
-        "sourceElementId": UUIDAttributeClass, // "]),
-        "targetElementId": UUIDAttributeClass, // "]),
-        "workflowId": UUIDAttributeClass, // "]),
-        "outcome": StringAttributeClass, // "]),
-        "outcomeName": StringAttributeClass, // "]),
-        "parallelBranchName": StringAttributeClass, // "]),
-        "parallelBranchElementId": UUIDAttributeClass, // "]),
-        "outcomeRecId": UUIDAttributeClass, // "]),
-        "sourceSubworkflowElementLinkId": UUIDAttributeClass, // "]),
-        "targetSubworkflowElementLinkId": UUIDAttributeClass, // "]),
-        "relationship_WorkflowVersionRelationshipId": UUIDAttributeClass, // "]),
-        "Relationship_SourceElementRelationshipId": UUIDAttributeClass, // "]),
-        "Relationship_TargetElementRelationshipId": UUIDAttributeClass, // "]),
-        "Relationship_WorkflowParallelBranchRelationshipId": UUIDAttributeClass, // "]),
-        "backingTable_WorkflowElementLinkTableRelationshipId": UUIDAttributeClass, // "]),
+        "level": StringAttributeClass, // 
+        "sequence": StringAttributeClass, // 
+        "sourceType": StringAttributeClass, // 
+        "targetType": StringAttributeClass, // 
+        "sourceElementId": UUIDAttributeClass, // 
+        "targetElementId": UUIDAttributeClass, // 
+        "workflowId": UUIDAttributeClass, // 
+        "outcome": StringAttributeClass, // 
+        "outcomeName": StringAttributeClass, // 
+        "parallelBranchName": StringAttributeClass, // 
+        "parallelBranchElementId": UUIDAttributeClass, // 
+        "outcomeRecId": UUIDAttributeClass, // 
+        "sourceSubworkflowElementLinkId": UUIDAttributeClass, // 
+        "targetSubworkflowElementLinkId": UUIDAttributeClass, // 
+        "relationship_WorkflowVersionRelationshipId": UUIDAttributeClass, // 
+        "Relationship_SourceElementRelationshipId": UUIDAttributeClass, // 
+        "Relationship_TargetElementRelationshipId": UUIDAttributeClass, // 
+        "Relationship_WorkflowParallelBranchRelationshipId": UUIDAttributeClass, // 
+        "backingTable_WorkflowElementLinkTableRelationshipId": UUIDAttributeClass, // 
       ])
       .registerPath("workflow_elementlinks");
   }

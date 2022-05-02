@@ -11,9 +11,9 @@ class DWorkflowElementOutcomeMessageEntity : DOOPEntity {
 
     this
       .addValues([
-        "ChannelId": UUIDAttributeClass, // "]),
-        "ChannelDatabaseId": UUIDAttributeClass, // "]),
-        "backingTable_WorkflowElementOutcomeMessageRelationshipId": UUIDAttributeClass, // "]),
+        "ChannelId": UUIDAttributeClass, // 
+        "ChannelDatabaseId": UUIDAttributeClass, // 
+        "backingTable_WorkflowElementOutcomeMessageRelationshipId": UUIDAttributeClass, // 
       ])
       .registerPath("workflow_elementoutcomemessages");
   }
