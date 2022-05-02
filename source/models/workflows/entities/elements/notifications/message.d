@@ -10,15 +10,15 @@ class DWorkflowElementNotificationMessageEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
-        "LanguageId": OOPUUIDAttribute.descriptions(["en":""]),
-        "Text": OOPStringAttribute.descriptions(["en":""]),
-        "ElementLinkSequence": OOPStringAttribute.descriptions(["en":""]),
-        "ElementLinkSourceElementId": OOPUUIDAttribute.descriptions(["en":""]),
-        "ElementLinkTargetElementId": OOPUUIDAttribute.descriptions(["en":""]),
-        "ElementOutcome": OOPStringAttribute.descriptions(["en":""]),
-        "Relationship_WorkflowElementNotificationMessageRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
-        "backingTable_WorkflowMessageTextRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
+      .addValues([
+        "LanguageId": UUIDAttributeClass, // 
+        "Text": StringAttributeClass, // 
+        "ElementLinkSequence": StringAttributeClass, // 
+        "ElementLinkSourceElementId": UUIDAttributeClass, // 
+        "ElementLinkTargetElementId": UUIDAttributeClass, // 
+        "ElementOutcome": StringAttributeClass, // 
+        "Relationship_WorkflowElementNotificationMessageRelationshipId": UUIDAttributeClass, // 
+        "backingTable_WorkflowMessageTextRelationshipId": UUIDAttributeClass, // 
       ])
       .registerPath("workflow_elementnotificationmessages");
   }

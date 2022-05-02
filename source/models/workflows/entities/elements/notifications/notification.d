@@ -10,27 +10,27 @@ class DWorkflowElementNotificationEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
-        "action": OOPStringAttribute.descriptions(["en":""]),
-        "enabled": OOPStringAttribute.descriptions(["en":""]),
-        "elementTable": OOPStringAttribute.descriptions(["en":""]),
-        "elementId": OOPUUIDAttribute.descriptions(["en":""]),
-        "workflowUserValue": OOPStringAttribute.descriptions(["en":""]),
-        "assignmentRelationType": OOPStringAttribute.descriptions(["en":""]),
-        "assignmentType": OOPStringAttribute.descriptions(["en":""]),
-        "hierarchyFilterConditionId": OOPUUIDAttribute.descriptions(["en":""]),
-        "hierarchyFilterType": OOPStringAttribute.descriptions(["en":""]),
-        "hierarchyProviderName": OOPStringAttribute.descriptions(["en":""]),
-        "hierarchyStopConditionId": OOPUUIDAttribute.descriptions(["en":""]),
-        "hierarchyTokenName": OOPStringAttribute.descriptions(["en":""]),
-        "participantProviderName": OOPStringAttribute.descriptions(["en":""]),
-        "participantTokenName": OOPStringAttribute.descriptions(["en":""]),
-        "queueProviderName": OOPStringAttribute.descriptions(["en":""]),
-        "queueTokenName": OOPStringAttribute.descriptions(["en":""]),
-        "userValue": OOPStringAttribute.descriptions(["en":""]),
-        "relationship_WorkflowElementRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
-        "backingTable_WorkflowElementNotificationTableRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
-        "backingTable_WorkflowEscalationPathRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
+      .addValues([
+        "action": StringAttributeClass, // 
+        "enabled": StringAttributeClass, // 
+        "elementTable": StringAttributeClass, // 
+        "elementId": UUIDAttributeClass, // 
+        "workflowUserValue": StringAttributeClass, // 
+        "assignmentRelationType": StringAttributeClass, // 
+        "assignmentType": StringAttributeClass, // 
+        "hierarchyFilterConditionId": UUIDAttributeClass, // 
+        "hierarchyFilterType": StringAttributeClass, // 
+        "hierarchyProviderName": StringAttributeClass, // 
+        "hierarchyStopConditionId": UUIDAttributeClass, // 
+        "hierarchyTokenName": StringAttributeClass, // 
+        "participantProviderName": StringAttributeClass, // 
+        "participantTokenName": StringAttributeClass, // 
+        "queueProviderName": StringAttributeClass, // 
+        "queueTokenName": StringAttributeClass, // 
+        "userValue": StringAttributeClass, // 
+        "relationship_WorkflowElementRelationshipId": UUIDAttributeClass, // 
+        "backingTable_WorkflowElementNotificationTableRelationshipId": UUIDAttributeClass, // 
+        "backingTable_WorkflowEscalationPathRelationshipId": UUIDAttributeClass, // 
       ])
       .registerPath("workflow_elementnotifications");
   }
