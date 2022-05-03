@@ -11,24 +11,24 @@ class DWorkflowVersionNotificationEntity : DOOPEntity {
 
     this
       .addValues([
-        "Action": OOPStringAttribute.descriptions(["en":""]),
-        "Enabled": OOPStringAttribute.descriptions(["en":""]),
-        "WorkflowId": OOPUUIDAttribute.descriptions(["en":""]),
-        "WorkflowUserValue": OOPStringAttribute.descriptions(["en":""]),
-        "AssignmentRelationType": OOPStringAttribute.descriptions(["en":""]),
-        "AssignmentType": OOPStringAttribute.descriptions(["en":""]),
-        "HierarchyFilterConditionId": OOPUUIDAttribute.descriptions(["en":""]),
-        "HierarchyFilterType": OOPStringAttribute.descriptions(["en":""]),
-        "HierarchyProviderName": OOPStringAttribute.descriptions(["en":""]),
-        "HierarchyStopConditionId": OOPUUIDAttribute.descriptions(["en":""]),
-        "HierarchyTokenName": OOPStringAttribute.descriptions(["en":""]),
-        "ParticipantProviderName": OOPStringAttribute.descriptions(["en":""]),
-        "ParticipantTokenName": OOPStringAttribute.descriptions(["en":""]),
-        "QueueProviderName": OOPStringAttribute.descriptions(["en":""]),
-        "QueueTokenName": OOPStringAttribute.descriptions(["en":""]),
-        "UserValue": OOPStringAttribute.descriptions(["en":""]),
-        "Relationship_WorkflowVersionRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
-        "backingTable_WorkflowVersionNotificationTableRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
+        "Action": StringAttributeClass, //
+        "Enabled": StringAttributeClass, //
+        "WorkflowId": UUIDAttributeClass, //
+        "WorkflowUserValue": StringAttributeClass, //
+        "AssignmentRelationType": StringAttributeClass, //
+        "AssignmentType": StringAttributeClass, //
+        "HierarchyFilterConditionId": UUIDAttributeClass, //
+        "HierarchyFilterType": StringAttributeClass, //
+        "HierarchyProviderName": StringAttributeClass, //
+        "HierarchyStopConditionId": UUIDAttributeClass, //
+        "HierarchyTokenName": StringAttributeClass, //
+        "ParticipantProviderName": StringAttributeClass, //
+        "ParticipantTokenName": StringAttributeClass, //
+        "QueueProviderName": StringAttributeClass, //
+        "QueueTokenName": StringAttributeClass, //
+        "UserValue": StringAttributeClass, //
+        "Relationship_WorkflowVersionRelationshipId": UUIDAttributeClass, //
+        "backingTable_WorkflowVersionNotificationTableRelationshipId": UUIDAttributeClass, //
       ])
       .registerPath("workflow_versionnotifications");
   }

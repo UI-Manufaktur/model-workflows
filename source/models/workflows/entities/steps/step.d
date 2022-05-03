@@ -11,67 +11,67 @@ class DWorkflowStepEntity : DOOPEntity {
 
     this
       .addValues([
-        "completionPolicy": OOPStringAttribute.descriptions(["en":""]),
-        "completionPolicyPercentage": OOPStringAttribute.descriptions(["en":""]),
-        "elementId": OOPUUIDAttribute.descriptions(["en":""]),
-        "runStep": OOPStringAttribute.descriptions(["en":""]),
-        "runStepConditionId": OOPUUIDAttribute.descriptions(["en":""]),
-        "sequence": OOPStringAttribute.descriptions(["en":""]),
+        "completionPolicy": StringAttributeClass, //
+        "completionPolicyPercentage": StringAttributeClass, //
+        "elementId": UUIDAttributeClass, //
+        "runStep": StringAttributeClass, //
+        "runStepConditionId": UUIDAttributeClass, //
+        "sequence": StringAttributeClass, //
         "stepId": OOPLinkAttribute("WorkflowStepEntity").descriptions(["en":""]),
-        "workflowUserValue": OOPStringAttribute.descriptions(["en":""]),
-        "assignmentRelationType": OOPStringAttribute.descriptions(["en":""]),
-        "assignmentType": OOPStringAttribute.descriptions(["en":""]),
-        "hierarchyFilterConditionId": OOPUUIDAttribute.descriptions(["en":""]),
-        "hierarchyFilterType": OOPStringAttribute.descriptions(["en":""]),
-        "hierarchyProviderName": OOPStringAttribute.descriptions(["en":""]),
-        "hierarchyStopConditionId": OOPUUIDAttribute.descriptions(["en":""]),
-        "hierarchyTokenName": OOPStringAttribute.descriptions(["en":""]),
-        "participantProviderName": OOPStringAttribute.descriptions(["en":""]),
-        "participantTokenName": OOPStringAttribute.descriptions(["en":""]),
-        "queueProviderName": OOPStringAttribute.descriptions(["en":""]),
-        "queueTokenName": OOPStringAttribute.descriptions(["en":""]),
-        "iserValue": OOPStringAttribute.descriptions(["en":""]),
-        "dailyCalendar": OOPStringAttribute.descriptions(["en":""]),
-        "dailyCalendarProvider": OOPStringAttribute.descriptions(["en":""]),
-        "dailyIncludeFriday": OOPStringAttribute.descriptions(["en":""]),
-        "dailyIncludeMonday": OOPStringAttribute.descriptions(["en":""]),
-        "dailyIncludeSaturday": OOPStringAttribute.descriptions(["en":""]),
-        "dailyIncludeSunday": OOPStringAttribute.descriptions(["en":""]),
-        "dailyIncludeThursday": OOPStringAttribute.descriptions(["en":""]),
-        "dailyIncludeTuesday": OOPStringAttribute.descriptions(["en":""]),
-        "dailyIncludeWednesday": OOPStringAttribute.descriptions(["en":""]),
-        "dailyUseNonCalendar": OOPStringAttribute.descriptions(["en":""]),
-        "dailyValue": OOPStringAttribute.descriptions(["en":""]),
-        "dateType": OOPStringAttribute.descriptions(["en":""]),
-        "hourCalendar": OOPStringAttribute.descriptions(["en":""]),
-        "hourCalendarProvider": OOPStringAttribute.descriptions(["en":""]),
-        "hourIncludeFriday": OOPStringAttribute.descriptions(["en":""]),
-        "hourIncludeMonday": OOPStringAttribute.descriptions(["en":""]),
-        "hourIncludeSaturday": OOPStringAttribute.descriptions(["en":""]),
-        "hourIncludeSunday": OOPStringAttribute.descriptions(["en":""]),
-        "hourIncludeThursday": OOPStringAttribute.descriptions(["en":""]),
-        "hourIncludeTuesday": OOPStringAttribute.descriptions(["en":""]),
-        "hourIncludeWednesday": OOPStringAttribute.descriptions(["en":""]),
-        "hoursAvailable": OOPStringAttribute.descriptions(["en":""]),
-        "hourStartTime": OOPStringAttribute.descriptions(["en":""]),
-        "hourUseNonCalendar": OOPStringAttribute.descriptions(["en":""]),
-        "hourValue": OOPStringAttribute.descriptions(["en":""]),
-        "monthlyDayOfWeek": OOPStringAttribute.descriptions(["en":""]),
-        "monthlyWeekInMonth": OOPStringAttribute.descriptions(["en":""]),
-        "timeSpanRelationType": OOPStringAttribute.descriptions(["en":""]),
-        "weeklyDayOfWeek": OOPStringAttribute.descriptions(["en":""]),
-        "weeklyValue": OOPStringAttribute.descriptions(["en":""]),
-        "yearlyDayOfWeek": OOPStringAttribute.descriptions(["en":""]),
-        "yearlyMonthInYear": OOPStringAttribute.descriptions(["en":""]),
-        "yearlyWeekInMonth": OOPStringAttribute.descriptions(["en":""]),
-        "escalationAction": OOPStringAttribute.descriptions(["en":""]),
-        "escalationType": OOPStringAttribute.descriptions(["en":""]),
-        "escalationPathAction": OOPStringAttribute.descriptions(["en":""]),
-        "relationship_WorkflowElementRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
-        "relationship_ConditionRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
-        "relationship_HierarchyFilterConditionRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
-        "relationship_HierarchyStopConditionRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
-        "backingTable_WorkflowStepTableRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
+        "workflowUserValue": StringAttributeClass, //
+        "assignmentRelationType": StringAttributeClass, //
+        "assignmentType": StringAttributeClass, //
+        "hierarchyFilterConditionId": UUIDAttributeClass, //
+        "hierarchyFilterType": StringAttributeClass, //
+        "hierarchyProviderName": StringAttributeClass, //
+        "hierarchyStopConditionId": UUIDAttributeClass, //
+        "hierarchyTokenName": StringAttributeClass, //
+        "participantProviderName": StringAttributeClass, //
+        "participantTokenName": StringAttributeClass, //
+        "queueProviderName": StringAttributeClass, //
+        "queueTokenName": StringAttributeClass, //
+        "iserValue": StringAttributeClass, //
+        "dailyCalendar": StringAttributeClass, //
+        "dailyCalendarProvider": StringAttributeClass, //
+        "dailyIncludeFriday": StringAttributeClass, //
+        "dailyIncludeMonday": StringAttributeClass, //
+        "dailyIncludeSaturday": StringAttributeClass, //
+        "dailyIncludeSunday": StringAttributeClass, //
+        "dailyIncludeThursday": StringAttributeClass, //
+        "dailyIncludeTuesday": StringAttributeClass, //
+        "dailyIncludeWednesday": StringAttributeClass, //
+        "dailyUseNonCalendar": StringAttributeClass, //
+        "dailyValue": StringAttributeClass, //
+        "dateType": StringAttributeClass, //
+        "hourCalendar": StringAttributeClass, //
+        "hourCalendarProvider": StringAttributeClass, //
+        "hourIncludeFriday": StringAttributeClass, //
+        "hourIncludeMonday": StringAttributeClass, //
+        "hourIncludeSaturday": StringAttributeClass, //
+        "hourIncludeSunday": StringAttributeClass, //
+        "hourIncludeThursday": StringAttributeClass, //
+        "hourIncludeTuesday": StringAttributeClass, //
+        "hourIncludeWednesday": StringAttributeClass, //
+        "hoursAvailable": StringAttributeClass, //
+        "hourStartTime": StringAttributeClass, //
+        "hourUseNonCalendar": StringAttributeClass, //
+        "hourValue": StringAttributeClass, //
+        "monthlyDayOfWeek": StringAttributeClass, //
+        "monthlyWeekInMonth": StringAttributeClass, //
+        "timeSpanRelationType": StringAttributeClass, //
+        "weeklyDayOfWeek": StringAttributeClass, //
+        "weeklyValue": StringAttributeClass, //
+        "yearlyDayOfWeek": StringAttributeClass, //
+        "yearlyMonthInYear": StringAttributeClass, //
+        "yearlyWeekInMonth": StringAttributeClass, //
+        "escalationAction": StringAttributeClass, //
+        "escalationType": StringAttributeClass, //
+        "escalationPathAction": StringAttributeClass, //
+        "relationship_WorkflowElementRelationshipId": UUIDAttributeClass, //
+        "relationship_ConditionRelationshipId": UUIDAttributeClass, //
+        "relationship_HierarchyFilterConditionRelationshipId": UUIDAttributeClass, //
+        "relationship_HierarchyStopConditionRelationshipId": UUIDAttributeClass, //
+        "backingTable_WorkflowStepTableRelationshipId": UUIDAttributeClass, //
       ])
       .registerPath("workflow_steps");
   }

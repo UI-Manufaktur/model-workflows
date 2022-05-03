@@ -11,15 +11,15 @@ class DWorkflowWorkItemQueueAssignmentRuleEntity : DOOPEntity {
 
     this
       .addValues([
-        "EvaluationOrder": OOPStringAttribute.descriptions(["en":""]),
-        "Expression": OOPStringAttribute.descriptions(["en":""]),
-        "WorkflowWorkItemQueue": OOPStringAttribute.descriptions(["en":""]),
-        "WorkFlowWorkItemQueueExpressionDef": OOPStringAttribute.descriptions(["en":""]),
-        "ExpressionId": OOPUUIDAttribute.descriptions(["en":""]),
-        "WorkItemQueueName": OOPStringAttribute.descriptions(["en":""]),
-        "WorkItemQueueType": OOPStringAttribute.descriptions(["en":""]),
-        "WorkItemType": OOPStringAttribute.descriptions(["en":""]),
-        "backingTable_WorkflowWorkItemQueueExpressionRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
+        "EvaluationOrder": StringAttributeClass, //
+        "Expression": StringAttributeClass, //
+        "WorkflowWorkItemQueue": StringAttributeClass, //
+        "WorkFlowWorkItemQueueExpressionDef": StringAttributeClass, //
+        "ExpressionId": UUIDAttributeClass, //
+        "WorkItemQueueName": StringAttributeClass, //
+        "WorkItemQueueType": StringAttributeClass, //
+        "WorkItemType": StringAttributeClass, //
+        "backingTable_WorkflowWorkItemQueueExpressionRelationshipId": UUIDAttributeClass, //
       ])
       .registerPath("workflow_workitemqueueassignmentrules");
   }

@@ -11,9 +11,9 @@ class DWorkflowParallelBranchEntity : DOOPEntity {
 
     this
       .addValues([
-        "ElementId": OOPUUIDAttribute.descriptions(["en":""]),
-        "Relationship_WorkflowElementRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
-        "backingTable_WorkflowParallelBranchTableRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
+        "ElementId": UUIDAttributeClass, //
+        "Relationship_WorkflowElementRelationshipId": UUIDAttributeClass, //
+        "backingTable_WorkflowParallelBranchTableRelationshipId": UUIDAttributeClass, //
       ])
       .registerPath("workflow_parallelbranches");
   }

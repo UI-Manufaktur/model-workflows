@@ -11,10 +11,10 @@ class DWorkflowExpressionEntity : DOOPEntity {
 
     this
       .addValues([
-        "expressionClassName": OOPStringAttribute.descriptions(["en":""]),
-        "xPathQuery": OOPStringAttribute.descriptions(["en":""]),
-        "expressionDefinition": OOPStringAttribute.descriptions(["en":""]),
-        "backingTable_ExpressionTableRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
+        "expressionClassName": StringAttributeClass, //
+        "xPathQuery": StringAttributeClass, //
+        "expressionDefinition": StringAttributeClass, //
+        "backingTable_ExpressionTableRelationshipId": UUIDAttributeClass, //
       ])
       .registerPath("workflow_expressions");
   }

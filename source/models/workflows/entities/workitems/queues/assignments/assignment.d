@@ -12,10 +12,10 @@ class DWorkflowWorkItemQueueAssignmentEntity : DOOPEntity {
     this
       .addValues([
         "defaultQueueId": OOPLinkAttribute("queue").descriptions(["en":""]),
-        "WorkitemType": OOPStringAttribute.descriptions(["en":""]),
-        "DefaultWorkItemQueueName": OOPStringAttribute.descriptions(["en":""]),
-        "DefaultWorkItemQueueType": OOPStringAttribute.descriptions(["en":""]),
-        "backingTable_WorkflowWorkItemQueueExpressionDefRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
+        "WorkitemType": StringAttributeClass, //
+        "DefaultWorkItemQueueName": StringAttributeClass, //
+        "DefaultWorkItemQueueType": StringAttributeClass, //
+        "backingTable_WorkflowWorkItemQueueExpressionDefRelationshipId": UUIDAttributeClass, //
       ])
       .registerPath("workflow_workitemqueueassignments");
   }

@@ -11,20 +11,20 @@ class DWorkflowSubworkflowEntity : DOOPEntity {
 
     this
       .addValues([
-        "DocumentKeyField": OOPStringAttribute.descriptions(["en":""]),
-        "DocumentKeyTable": OOPStringAttribute.descriptions(["en":""]),
-        "ElementId": OOPUUIDAttribute.descriptions(["en":""]),
-        "ElementName": OOPStringAttribute.descriptions(["en":""]),
-        "ElementType": OOPStringAttribute.descriptions(["en":""]),
-        "LineItemType": OOPStringAttribute.descriptions(["en":""]),
-        "ParallelBranchElementId": OOPUUIDAttribute.descriptions(["en":""]),
-        "ParallelBranchName": OOPStringAttribute.descriptions(["en":""]),
-        "WaitForComplete": OOPStringAttribute.descriptions(["en":""]),
-        "WorkflowNumber": OOPStringAttribute.descriptions(["en":""]),
-        "WorkflowId": OOPUUIDAttribute.descriptions(["en":""]),
-        "Relationship_WorkflowVersionRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
-        "Relationship_WorkflowParallelBranchRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
-        "backingTable_WorkflowSubWorkflowRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
+        "DocumentKeyField": StringAttributeClass, //
+        "DocumentKeyTable": StringAttributeClass, //
+        "ElementId": UUIDAttributeClass, //
+        "ElementName": StringAttributeClass, //
+        "ElementType": StringAttributeClass, //
+        "LineItemType": StringAttributeClass, //
+        "ParallelBranchElementId": UUIDAttributeClass, //
+        "ParallelBranchName": StringAttributeClass, //
+        "WaitForComplete": StringAttributeClass, //
+        "WorkflowNumber": StringAttributeClass, //
+        "WorkflowId": UUIDAttributeClass, //
+        "Relationship_WorkflowVersionRelationshipId": UUIDAttributeClass, //
+        "Relationship_WorkflowParallelBranchRelationshipId": UUIDAttributeClass, //
+        "backingTable_WorkflowSubWorkflowRelationshipId": UUIDAttributeClass, //
       ])
       .registerPath("workflow_subworkflows");
   }

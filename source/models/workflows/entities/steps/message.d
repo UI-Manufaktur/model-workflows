@@ -11,11 +11,11 @@ class DWorkflowStepMessageEntity : DOOPEntity {
 
     this
       .addValues([
-        "languageId": OOPUUIDAttribute.descriptions(["en":""]),
-        "text": OOPStringAttribute.descriptions(["en":""]),
+        "languageId": UUIDAttributeClass, //
+        "text": StringAttributeClass, //
         "stepId": OOPLinkAttribute("wflStep").descriptions(["en":""]),
-        "relationship_WorkflowStepRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
-        "backingTable_WorkflowMessageTextRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
+        "relationship_WorkflowStepRelationshipId": UUIDAttributeClass, //
+        "backingTable_WorkflowMessageTextRelationshipId": UUIDAttributeClass, //
       ])
       .registerPath("workflow_stepmessages");
   }

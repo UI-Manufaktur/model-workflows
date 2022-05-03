@@ -11,13 +11,13 @@ class DWorkflowLineItemEntity : DOOPEntity {
 
     this
       .addValues([
-        "sequence": OOPStringAttribute.descriptions(["en":""]),
-        "expressionId": OOPUUIDAttribute.descriptions(["en":""]),
-        "elementId": OOPUUIDAttribute.descriptions(["en":""]),
-        "workflowNumber": OOPStringAttribute.descriptions(["en":""]),
-        "relationship_WorkflowSubworkflowRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
-        "relationship_ConditionRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
-        "backingTable_WorkflowSubWorkflowItemRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
+        "sequence": StringAttributeClass, //
+        "expressionId": UUIDAttributeClass, //
+        "elementId": UUIDAttributeClass, //
+        "workflowNumber": StringAttributeClass, //
+        "relationship_WorkflowSubworkflowRelationshipId": UUIDAttributeClass, //
+        "relationship_ConditionRelationshipId": UUIDAttributeClass, //
+        "backingTable_WorkflowSubWorkflowItemRelationshipId": UUIDAttributeClass, //
       ])
       .registerPath("workflow_lineitems");
   }

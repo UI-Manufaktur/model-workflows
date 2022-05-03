@@ -11,30 +11,30 @@ class DWorkflowVersionEntity : DOOPEntity {
 
     this
       .addValues([
-        "activationConditionId": OOPUUIDAttribute.descriptions(["en":""]),
-        "activationConditionType": OOPStringAttribute.descriptions(["en":""]),
-        "workflowId": OOPUUIDAttribute.descriptions(["en":""]),
-        "isActive": OOPStringAttribute.descriptions(["en":""]),
-        "owner": OOPStringAttribute.descriptions(["en":""]),
-        "valId": OOPUUIDAttribute.descriptions(["en":""]),
-        "versionIdBuild": OOPStringAttribute.descriptions(["en":""]),
-        "versionIdMajor": OOPStringAttribute.descriptions(["en":""]),
-        "versionIdMinor": OOPStringAttribute.descriptions(["en":""]),
-        "versionIdRevision": OOPStringAttribute.descriptions(["en":""]),
-        "workflowTable": OOPStringAttribute.descriptions(["en":""]),
-        "emailTemplateId": OOPUUIDAttribute.descriptions(["en":""]),
-        "associationType": OOPStringAttribute.descriptions(["en":""]),
-        "categoryName": OOPStringAttribute.descriptions(["en":""]),
-        "dataArea": OOPStringAttribute.descriptions(["en":""]),
-        "isDefault": OOPStringAttribute.descriptions(["en":""]),
-        "documentTableName": OOPStringAttribute.descriptions(["en":""]),
-        "module": OOPStringAttribute.descriptions(["en":""]),
-        "workflowNumber": OOPStringAttribute.descriptions(["en":""]),
-        "workflowTypeName": OOPStringAttribute.descriptions(["en":""]),
-        "type": OOPStringAttribute.descriptions(["en":""]),
-        "versionId": OOPUUIDAttribute.descriptions(["en":""]),
-        "relationship_ActiviationConditionRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
-        "backingTable_WorkflowVersionTableRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
+        "activationConditionId": UUIDAttributeClass, //
+        "activationConditionType": StringAttributeClass, //
+        "workflowId": UUIDAttributeClass, //
+        "isActive": StringAttributeClass, //
+        "owner": StringAttributeClass, //
+        "valId": UUIDAttributeClass, //
+        "versionIdBuild": StringAttributeClass, //
+        "versionIdMajor": StringAttributeClass, //
+        "versionIdMinor": StringAttributeClass, //
+        "versionIdRevision": StringAttributeClass, //
+        "workflowTable": StringAttributeClass, //
+        "emailTemplateId": UUIDAttributeClass, //
+        "associationType": StringAttributeClass, //
+        "categoryName": StringAttributeClass, //
+        "dataArea": StringAttributeClass, //
+        "isDefault": StringAttributeClass, //
+        "documentTableName": StringAttributeClass, //
+        "module": StringAttributeClass, //
+        "workflowNumber": StringAttributeClass, //
+        "workflowTypeName": StringAttributeClass, //
+        "type": StringAttributeClass, //
+        "versionId": UUIDAttributeClass, //
+        "relationship_ActiviationConditionRelationshipId": UUIDAttributeClass, //
+        "backingTable_WorkflowVersionTableRelationshipId": UUIDAttributeClass, //
       ])
       .registerPath("workflow_versions");
   }

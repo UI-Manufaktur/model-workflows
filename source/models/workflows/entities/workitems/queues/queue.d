@@ -11,10 +11,10 @@ class DWFLWorkItemQueue : DOOPEntity {
 
     this
       .addValues([
-        "Status": OOPStringAttribute.descriptions(["en":""]),
-        "WorkItemType": OOPStringAttribute.descriptions(["en":""]),
-        "WorkItemTypeFriendlyName": OOPStringAttribute.descriptions(["en":""]),
-        "backingTable_WorkflowWorkItemQueueRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
+        "Status": StringAttributeClass, //
+        "WorkItemType": StringAttributeClass, //
+        "WorkItemTypeFriendlyName": StringAttributeClass, //
+        "backingTable_WorkflowWorkItemQueueRelationshipId": UUIDAttributeClass, //
       ])
       .registerPath("workflow_workitemqueues");
   }
