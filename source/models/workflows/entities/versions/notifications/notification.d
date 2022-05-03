@@ -10,7 +10,7 @@ class DWorkflowVersionNotificationEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "Action": OOPStringAttribute.descriptions(["en":""]),
         "Enabled": OOPStringAttribute.descriptions(["en":""]),
         "WorkflowId": OOPUUIDAttribute.descriptions(["en":""]),

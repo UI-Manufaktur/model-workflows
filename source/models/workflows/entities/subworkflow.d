@@ -10,7 +10,7 @@ class DWorkflowSubworkflowEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "DocumentKeyField": OOPStringAttribute.descriptions(["en":""]),
         "DocumentKeyTable": OOPStringAttribute.descriptions(["en":""]),
         "ElementId": OOPUUIDAttribute.descriptions(["en":""]),

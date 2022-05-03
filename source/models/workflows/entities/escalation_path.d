@@ -62,7 +62,7 @@ Relationship_HierarchyFilterConditionRelationshipId		Workflow/WorkflowEscalation
 Relationship_HierarchyStopConditionRelationshipId		Workflow/WorkflowEscalationPathEntity
 BackingTable_WorkflowEscalationPathTableRelationshipId	 */
     this
-      //.addAttributes([])
+      //.addValues([])
       .registerPath("workflow_escalationpaths");
   }
 }

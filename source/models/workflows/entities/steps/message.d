@@ -10,7 +10,7 @@ class DWorkflowStepMessageEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "languageId": OOPUUIDAttribute.descriptions(["en":""]),
         "text": OOPStringAttribute.descriptions(["en":""]),
         "stepId": OOPLinkAttribute("wflStep").descriptions(["en":""]),

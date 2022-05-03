@@ -10,7 +10,7 @@ class DWorkflowStepEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "completionPolicy": OOPStringAttribute.descriptions(["en":""]),
         "completionPolicyPercentage": OOPStringAttribute.descriptions(["en":""]),
         "elementId": OOPUUIDAttribute.descriptions(["en":""]),

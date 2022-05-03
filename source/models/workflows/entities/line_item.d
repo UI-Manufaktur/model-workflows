@@ -10,7 +10,7 @@ class DWorkflowLineItemEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "sequence": OOPStringAttribute.descriptions(["en":""]),
         "expressionId": OOPUUIDAttribute.descriptions(["en":""]),
         "elementId": OOPUUIDAttribute.descriptions(["en":""]),

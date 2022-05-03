@@ -10,7 +10,7 @@ class DWorkflowVersionEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "activationConditionId": OOPUUIDAttribute.descriptions(["en":""]),
         "activationConditionType": OOPStringAttribute.descriptions(["en":""]),
         "workflowId": OOPUUIDAttribute.descriptions(["en":""]),

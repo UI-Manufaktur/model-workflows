@@ -10,7 +10,7 @@ class DWorkflowWorkItemQueueGroupEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "backingTable_WorkflowWorkItemQueueGroupRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),
       ])
       .registerPath("workflow_workitemqueuegroups");

@@ -10,7 +10,7 @@ class DWorkflowWorkItemQueueAssignmentRuleEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "EvaluationOrder": OOPStringAttribute.descriptions(["en":""]),
         "Expression": OOPStringAttribute.descriptions(["en":""]),
         "WorkflowWorkItemQueue": OOPStringAttribute.descriptions(["en":""]),

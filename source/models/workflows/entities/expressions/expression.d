@@ -10,7 +10,7 @@ class DWorkflowExpressionEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "expressionClassName": OOPStringAttribute.descriptions(["en":""]),
         "xPathQuery": OOPStringAttribute.descriptions(["en":""]),
         "expressionDefinition": OOPStringAttribute.descriptions(["en":""]),

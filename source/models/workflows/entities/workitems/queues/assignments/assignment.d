@@ -10,7 +10,7 @@ class DWorkflowWorkItemQueueAssignmentEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "defaultQueueId": OOPLinkAttribute("queue").descriptions(["en":""]),
         "WorkitemType": OOPStringAttribute.descriptions(["en":""]),
         "DefaultWorkItemQueueName": OOPStringAttribute.descriptions(["en":""]),

@@ -10,7 +10,7 @@ class DWorkflowParametersSystemEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "workflowExecutionUser": OOPStringAttribute.descriptions(["en":""]),
         "id": OOPUUIDAttribute.descriptions(["en":""]),
         "workflowNotifications": OOPStringAttribute.descriptions(["en":""]),

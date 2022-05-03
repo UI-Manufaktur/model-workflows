@@ -10,7 +10,7 @@ class DWorkflowVersionNotesEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "notes": OOPStringAttribute.descriptions(["en":""]),
         "workflowId": OOPUUIDAttribute.descriptions(["en":""]),
         "relationship_WorkflowVersionRelationshipId": OOPUUIDAttribute.descriptions(["en":""]),

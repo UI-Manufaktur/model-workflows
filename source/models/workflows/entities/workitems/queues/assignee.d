@@ -10,7 +10,7 @@ class DWorkflowWorkItemQueueAssigneeEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "isOwner": OOPStringAttribute.descriptions(["en":""]),
         "User": OOPStringAttribute.descriptions(["en":""]),
         "WorkitemQueue": OOPStringAttribute.descriptions(["en":""]),
