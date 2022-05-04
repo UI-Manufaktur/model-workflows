@@ -13,7 +13,7 @@ class DWorkflowStepMessageEntity : DOOPEntity {
       .addValues([
         "languageId": UUIDAttributeClass, //
         "text": StringAttributeClass, //
-        "stepId": OOPLinkAttribute("wflStep").descriptions(["en":""]),
+        "stepId": UUIDAttributeClass, // wflStep").descriptions(["en":""]),
         "relationship_WorkflowStepRelationshipId": UUIDAttributeClass, //
         "backingTable_WorkflowMessageTextRelationshipId": UUIDAttributeClass, //
       ])

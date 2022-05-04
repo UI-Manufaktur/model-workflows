@@ -11,7 +11,7 @@ class DWorkflowWorkItemQueueAssignmentEntity : DOOPEntity {
 
     this
       .addValues([
-        "defaultQueueId": OOPLinkAttribute("queue").descriptions(["en":""]),
+        "defaultQueueId": UUIDAttributeClass, // queue").descriptions(["en":""]),
         "WorkitemType": StringAttributeClass, //
         "DefaultWorkItemQueueName": StringAttributeClass, //
         "DefaultWorkItemQueueType": StringAttributeClass, //

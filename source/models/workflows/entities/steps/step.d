@@ -17,7 +17,7 @@ class DWorkflowStepEntity : DOOPEntity {
         "runStep": StringAttributeClass, //
         "runStepConditionId": UUIDAttributeClass, //
         "sequence": StringAttributeClass, //
-        "stepId": OOPLinkAttribute("WorkflowStepEntity").descriptions(["en":""]),
+        "stepId": UUIDAttributeClass, // WorkflowStepEntity").descriptions(["en":""]),
         "workflowUserValue": StringAttributeClass, //
         "assignmentRelationType": StringAttributeClass, //
         "assignmentType": StringAttributeClass, //
