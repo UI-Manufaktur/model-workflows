@@ -11,12 +11,12 @@ class DWorkflowWorkItemQueueGroupRelationEntity : DOOPEntity {
 
     this
       .addValues([
-        "workflowWorkitemQueue": StringAttributeClass, //
-        "workflowWorkitemQueueGroup": StringAttributeClass, //
-        "workItemQueueName": StringAttributeClass, //
-        "workItemQueueType": StringAttributeClass, //
-        "workItemQueueGroupName": StringAttributeClass, //
-        "backingTable_WorkflowWorkItemQueueGroupRelationRelationshipId": UUIDAttributeClass, //
+        "workflowWorkitemQueue": StringAttribute, //
+        "workflowWorkitemQueueGroup": StringAttribute, //
+        "workItemQueueName": StringAttribute, //
+        "workItemQueueType": StringAttribute, //
+        "workItemQueueGroupName": StringAttribute, //
+        "backingTable_WorkflowWorkItemQueueGroupRelationRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_workitemqueuegrouprelations");
   }

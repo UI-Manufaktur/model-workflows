@@ -11,11 +11,11 @@ class DWorkflowElementActionEntity : DOOPEntity {
 
     this
       .addValues([
-        "enabled": StringAttributeClass, // 
-        "isOutcome": StringAttributeClass, // 
-        "elementId": UUIDAttributeClass, // 
-        "relationship_WorkflowElementRelationshipId": UUIDAttributeClass, // 
-        "backingTable_WorkflowActionTableRelationshipId": UUIDAttributeClass, // 
+        "enabled": StringAttribute, // 
+        "isOutcome": StringAttribute, // 
+        "elementId": UUIDAttribute, // 
+        "relationship_WorkflowElementRelationshipId": UUIDAttribute, // 
+        "backingTable_WorkflowActionTableRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("workflow_elementactions");
   }

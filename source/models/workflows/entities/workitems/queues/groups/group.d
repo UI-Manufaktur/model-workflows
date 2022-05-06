@@ -11,7 +11,7 @@ class DWorkflowWorkItemQueueGroupEntity : DOOPEntity {
 
     this
       .addValues([
-        "backingTable_WorkflowWorkItemQueueGroupRelationshipId": UUIDAttributeClass, //
+        "backingTable_WorkflowWorkItemQueueGroupRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_workitemqueuegroups");
   }

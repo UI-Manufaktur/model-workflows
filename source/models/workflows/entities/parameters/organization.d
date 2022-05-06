@@ -11,9 +11,9 @@ class DWorkflowParametersOrganizationEntity : DOOPEntity {
 
     this
       .addValues([
-        "workflowNotifications": StringAttributeClass, //
-        "backingTable_WorkflowParametersRelationshipId": UUIDAttributeClass, //
-        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttributeClass, //
+        "workflowNotifications": StringAttribute, //
+        "backingTable_WorkflowParametersRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_parametersorganizations");
   }

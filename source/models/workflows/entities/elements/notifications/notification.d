@@ -11,26 +11,26 @@ class DWorkflowElementNotificationEntity : DOOPEntity {
 
     this
       .addValues([
-        "action": StringAttributeClass, // 
-        "enabled": StringAttributeClass, // 
-        "elementTable": StringAttributeClass, // 
-        "elementId": UUIDAttributeClass, // 
-        "workflowUserValue": StringAttributeClass, // 
-        "assignmentRelationType": StringAttributeClass, // 
-        "assignmentType": StringAttributeClass, // 
-        "hierarchyFilterConditionId": UUIDAttributeClass, // 
-        "hierarchyFilterType": StringAttributeClass, // 
-        "hierarchyProviderName": StringAttributeClass, // 
-        "hierarchyStopConditionId": UUIDAttributeClass, // 
-        "hierarchyTokenName": StringAttributeClass, // 
-        "participantProviderName": StringAttributeClass, // 
-        "participantTokenName": StringAttributeClass, // 
-        "queueProviderName": StringAttributeClass, // 
-        "queueTokenName": StringAttributeClass, // 
-        "userValue": StringAttributeClass, // 
-        "relationship_WorkflowElementRelationshipId": UUIDAttributeClass, // 
-        "backingTable_WorkflowElementNotificationTableRelationshipId": UUIDAttributeClass, // 
-        "backingTable_WorkflowEscalationPathRelationshipId": UUIDAttributeClass, // 
+        "action": StringAttribute, // 
+        "enabled": StringAttribute, // 
+        "elementTable": StringAttribute, // 
+        "elementId": UUIDAttribute, // 
+        "workflowUserValue": StringAttribute, // 
+        "assignmentRelationType": StringAttribute, // 
+        "assignmentType": StringAttribute, // 
+        "hierarchyFilterConditionId": UUIDAttribute, // 
+        "hierarchyFilterType": StringAttribute, // 
+        "hierarchyProviderName": StringAttribute, // 
+        "hierarchyStopConditionId": UUIDAttribute, // 
+        "hierarchyTokenName": StringAttribute, // 
+        "participantProviderName": StringAttribute, // 
+        "participantTokenName": StringAttribute, // 
+        "queueProviderName": StringAttribute, // 
+        "queueTokenName": StringAttribute, // 
+        "userValue": StringAttribute, // 
+        "relationship_WorkflowElementRelationshipId": UUIDAttribute, // 
+        "backingTable_WorkflowElementNotificationTableRelationshipId": UUIDAttribute, // 
+        "backingTable_WorkflowEscalationPathRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("workflow_elementnotifications");
   }

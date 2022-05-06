@@ -11,20 +11,20 @@ class DWorkflowSubworkflowEntity : DOOPEntity {
 
     this
       .addValues([
-        "DocumentKeyField": StringAttributeClass, //
-        "DocumentKeyTable": StringAttributeClass, //
-        "ElementId": UUIDAttributeClass, //
-        "ElementName": StringAttributeClass, //
-        "ElementType": StringAttributeClass, //
-        "LineItemType": StringAttributeClass, //
-        "ParallelBranchElementId": UUIDAttributeClass, //
-        "ParallelBranchName": StringAttributeClass, //
-        "WaitForComplete": StringAttributeClass, //
-        "WorkflowNumber": StringAttributeClass, //
-        "WorkflowId": UUIDAttributeClass, //
-        "Relationship_WorkflowVersionRelationshipId": UUIDAttributeClass, //
-        "Relationship_WorkflowParallelBranchRelationshipId": UUIDAttributeClass, //
-        "backingTable_WorkflowSubWorkflowRelationshipId": UUIDAttributeClass, //
+        "DocumentKeyField": StringAttribute, //
+        "DocumentKeyTable": StringAttribute, //
+        "ElementId": UUIDAttribute, //
+        "ElementName": StringAttribute, //
+        "ElementType": StringAttribute, //
+        "LineItemType": StringAttribute, //
+        "ParallelBranchElementId": UUIDAttribute, //
+        "ParallelBranchName": StringAttribute, //
+        "WaitForComplete": StringAttribute, //
+        "WorkflowNumber": StringAttribute, //
+        "WorkflowId": UUIDAttribute, //
+        "Relationship_WorkflowVersionRelationshipId": UUIDAttribute, //
+        "Relationship_WorkflowParallelBranchRelationshipId": UUIDAttribute, //
+        "backingTable_WorkflowSubWorkflowRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_subworkflows");
   }

@@ -11,14 +11,14 @@ class DWorkflowElementNotificationMessageEntity : DOOPEntity {
 
     this
       .addValues([
-        "LanguageId": UUIDAttributeClass, // 
-        "Text": StringAttributeClass, // 
-        "ElementLinkSequence": StringAttributeClass, // 
-        "ElementLinkSourceElementId": UUIDAttributeClass, // 
-        "ElementLinkTargetElementId": UUIDAttributeClass, // 
-        "ElementOutcome": StringAttributeClass, // 
-        "Relationship_WorkflowElementNotificationMessageRelationshipId": UUIDAttributeClass, // 
-        "backingTable_WorkflowMessageTextRelationshipId": UUIDAttributeClass, // 
+        "LanguageId": UUIDAttribute, // 
+        "Text": StringAttribute, // 
+        "ElementLinkSequence": StringAttribute, // 
+        "ElementLinkSourceElementId": UUIDAttribute, // 
+        "ElementLinkTargetElementId": UUIDAttribute, // 
+        "ElementOutcome": StringAttribute, // 
+        "Relationship_WorkflowElementNotificationMessageRelationshipId": UUIDAttribute, // 
+        "backingTable_WorkflowMessageTextRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("workflow_elementnotificationmessages");
   }

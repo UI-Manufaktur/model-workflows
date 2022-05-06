@@ -11,12 +11,12 @@ class DWorkflowWorkItemQueueAssigneeEntity : DOOPEntity {
 
     this
       .addValues([
-        "isOwner": StringAttributeClass, //
-        "User": StringAttributeClass, //
-        "WorkitemQueue": StringAttributeClass, //
-        "WorkItemQueueName": StringAttributeClass, //
-        "WorkItemQueueType": StringAttributeClass, //
-        "backingTable_WorkflowWorkItemQueueAssigneeRelationshipId": UUIDAttributeClass, //
+        "isOwner": StringAttribute, //
+        "User": StringAttribute, //
+        "WorkitemQueue": StringAttribute, //
+        "WorkItemQueueName": StringAttribute, //
+        "WorkItemQueueType": StringAttribute, //
+        "backingTable_WorkflowWorkItemQueueAssigneeRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_workitemqueueassignees");
   }

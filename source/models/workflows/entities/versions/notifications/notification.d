@@ -11,24 +11,24 @@ class DWorkflowVersionNotificationEntity : DOOPEntity {
 
     this
       .addValues([
-        "Action": StringAttributeClass, //
-        "Enabled": StringAttributeClass, //
-        "WorkflowId": UUIDAttributeClass, //
-        "WorkflowUserValue": StringAttributeClass, //
-        "AssignmentRelationType": StringAttributeClass, //
-        "AssignmentType": StringAttributeClass, //
-        "HierarchyFilterConditionId": UUIDAttributeClass, //
-        "HierarchyFilterType": StringAttributeClass, //
-        "HierarchyProviderName": StringAttributeClass, //
-        "HierarchyStopConditionId": UUIDAttributeClass, //
-        "HierarchyTokenName": StringAttributeClass, //
-        "ParticipantProviderName": StringAttributeClass, //
-        "ParticipantTokenName": StringAttributeClass, //
-        "QueueProviderName": StringAttributeClass, //
-        "QueueTokenName": StringAttributeClass, //
-        "UserValue": StringAttributeClass, //
-        "Relationship_WorkflowVersionRelationshipId": UUIDAttributeClass, //
-        "backingTable_WorkflowVersionNotificationTableRelationshipId": UUIDAttributeClass, //
+        "Action": StringAttribute, //
+        "Enabled": StringAttribute, //
+        "WorkflowId": UUIDAttribute, //
+        "WorkflowUserValue": StringAttribute, //
+        "AssignmentRelationType": StringAttribute, //
+        "AssignmentType": StringAttribute, //
+        "HierarchyFilterConditionId": UUIDAttribute, //
+        "HierarchyFilterType": StringAttribute, //
+        "HierarchyProviderName": StringAttribute, //
+        "HierarchyStopConditionId": UUIDAttribute, //
+        "HierarchyTokenName": StringAttribute, //
+        "ParticipantProviderName": StringAttribute, //
+        "ParticipantTokenName": StringAttribute, //
+        "QueueProviderName": StringAttribute, //
+        "QueueTokenName": StringAttribute, //
+        "UserValue": StringAttribute, //
+        "Relationship_WorkflowVersionRelationshipId": UUIDAttribute, //
+        "backingTable_WorkflowVersionNotificationTableRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_versionnotifications");
   }

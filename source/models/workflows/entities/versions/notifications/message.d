@@ -11,11 +11,11 @@ class DWorkflowVersionNotificationMessageEntity : DOOPEntity {
 
     this
       .addValues([
-        "languageId": UUIDAttributeClass, //
-        "text": StringAttributeClass, //
-        "eorkflowId": UUIDAttributeClass, //
-        "relationship_WorkflowVersionRelationshipId": UUIDAttributeClass, //
-        "backingTable_WorkflowMessageTextRelationshipId": UUIDAttributeClass, //
+        "languageId": UUIDAttribute, //
+        "text": StringAttribute, //
+        "eorkflowId": UUIDAttribute, //
+        "relationship_WorkflowVersionRelationshipId": UUIDAttribute, //
+        "backingTable_WorkflowMessageTextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_versionnotificationmessages");
   }

@@ -11,13 +11,13 @@ class DWorkflowParametersSystemEntity : DOOPEntity {
 
     this
       .addValues([
-        "workflowExecutionUser": StringAttributeClass, //
-        "id": UUIDAttributeClass, //
-        "workflowNotifications": StringAttributeClass, //
-        "addAttachments": StringAttributeClass, //
-        "numberOfBatchTasks": StringAttributeClass, //
-        "isAllowApprovalBySubmitter": StringAttributeClass, //
-        "backingTable_SysWorkflowParametersRelationshipId": UUIDAttributeClass, //
+        "workflowExecutionUser": StringAttribute, //
+        "id": UUIDAttribute, //
+        "workflowNotifications": StringAttribute, //
+        "addAttachments": StringAttribute, //
+        "numberOfBatchTasks": StringAttribute, //
+        "isAllowApprovalBySubmitter": StringAttribute, //
+        "backingTable_SysWorkflowParametersRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_parameterssystems");
   }

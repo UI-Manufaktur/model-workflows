@@ -11,10 +11,10 @@ class DWorkflowVersionNotesEntity : DOOPEntity {
 
     this
       .addValues([
-        "notes": StringAttributeClass, //
-        "workflowId": UUIDAttributeClass, //
-        "relationship_WorkflowVersionRelationshipId": UUIDAttributeClass, //
-        "backingTable_WorkflowVersionTableNotesRelationshipId": UUIDAttributeClass, //
+        "notes": StringAttribute, //
+        "workflowId": UUIDAttribute, //
+        "relationship_WorkflowVersionRelationshipId": UUIDAttribute, //
+        "backingTable_WorkflowVersionTableNotesRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_versionnotes");
   }

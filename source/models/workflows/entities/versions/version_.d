@@ -11,30 +11,30 @@ class DWorkflowVersionEntity : DOOPEntity {
 
     this
       .addValues([
-        "activationConditionId": UUIDAttributeClass, //
-        "activationConditionType": StringAttributeClass, //
-        "workflowId": UUIDAttributeClass, //
-        "isActive": StringAttributeClass, //
-        "owner": StringAttributeClass, //
-        "valId": UUIDAttributeClass, //
-        "versionIdBuild": StringAttributeClass, //
-        "versionIdMajor": StringAttributeClass, //
-        "versionIdMinor": StringAttributeClass, //
-        "versionIdRevision": StringAttributeClass, //
-        "workflowTable": StringAttributeClass, //
-        "emailTemplateId": UUIDAttributeClass, //
-        "associationType": StringAttributeClass, //
-        "categoryName": StringAttributeClass, //
-        "dataArea": StringAttributeClass, //
-        "isDefault": StringAttributeClass, //
-        "documentTableName": StringAttributeClass, //
-        "module": StringAttributeClass, //
-        "workflowNumber": StringAttributeClass, //
-        "workflowTypeName": StringAttributeClass, //
-        "type": StringAttributeClass, //
-        "versionId": UUIDAttributeClass, //
-        "relationship_ActiviationConditionRelationshipId": UUIDAttributeClass, //
-        "backingTable_WorkflowVersionTableRelationshipId": UUIDAttributeClass, //
+        "activationConditionId": UUIDAttribute, //
+        "activationConditionType": StringAttribute, //
+        "workflowId": UUIDAttribute, //
+        "isActive": StringAttribute, //
+        "owner": StringAttribute, //
+        "valId": UUIDAttribute, //
+        "versionIdBuild": StringAttribute, //
+        "versionIdMajor": StringAttribute, //
+        "versionIdMinor": StringAttribute, //
+        "versionIdRevision": StringAttribute, //
+        "workflowTable": StringAttribute, //
+        "emailTemplateId": UUIDAttribute, //
+        "associationType": StringAttribute, //
+        "categoryName": StringAttribute, //
+        "dataArea": StringAttribute, //
+        "isDefault": StringAttribute, //
+        "documentTableName": StringAttribute, //
+        "module": StringAttribute, //
+        "workflowNumber": StringAttribute, //
+        "workflowTypeName": StringAttribute, //
+        "type": StringAttribute, //
+        "versionId": UUIDAttribute, //
+        "relationship_ActiviationConditionRelationshipId": UUIDAttribute, //
+        "backingTable_WorkflowVersionTableRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_versions");
   }

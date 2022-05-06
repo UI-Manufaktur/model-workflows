@@ -11,11 +11,11 @@ class DWorkflowWorkItemQueueAssignmentEntity : DOOPEntity {
 
     this
       .addValues([
-        "defaultQueueId": UUIDAttributeClass, // queue").descriptions(["en":""]),
-        "WorkitemType": StringAttributeClass, //
-        "DefaultWorkItemQueueName": StringAttributeClass, //
-        "DefaultWorkItemQueueType": StringAttributeClass, //
-        "backingTable_WorkflowWorkItemQueueExpressionDefRelationshipId": UUIDAttributeClass, //
+        "defaultQueueId": UUIDAttribute, // queue").descriptions(["en":""]),
+        "WorkitemType": StringAttribute, //
+        "DefaultWorkItemQueueName": StringAttribute, //
+        "DefaultWorkItemQueueType": StringAttribute, //
+        "backingTable_WorkflowWorkItemQueueExpressionDefRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_workitemqueueassignments");
   }
