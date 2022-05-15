@@ -11,7 +11,9 @@ class DWorkflowParallelBranchEntity : DOOPEntity {
 
     this
       .addValues([
-        "ElementId": UUIDAttribute, //
+        ElementIdAttribute, //
+      ])
+      .addValues([
         "Relationship_WorkflowElementRelationshipId": UUIDAttribute, //
         "backingTable_WorkflowParallelBranchTableRelationshipId": UUIDAttribute, //
       ])

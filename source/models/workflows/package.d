@@ -13,5 +13,6 @@ public import uim.core;
 public import uim.oop;
 public import uim.entities;
 
+public import models.workflows.attributes;
 public import models.workflows.classes;
 public import models.workflows.entities;

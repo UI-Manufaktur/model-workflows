@@ -14,8 +14,8 @@ class DWorkflowElementNotificationMessageEntity : DOOPEntity {
         "LanguageId": UUIDAttribute, // 
         "Text": StringAttribute, // 
         "ElementLinkSequence": StringAttribute, // 
-        "ElementLinkSourceElementId": UUIDAttribute, // 
-        "ElementLinkTargetElementId": UUIDAttribute, // 
+        "ElementLinkSourceElementId": ElementIdAttribute, // 
+        "ElementLinkTargetElementId": ElementIdAttribute, // 
         "ElementOutcome": StringAttribute, // 
         "Relationship_WorkflowElementNotificationMessageRelationshipId": UUIDAttribute, // 
         "backingTable_WorkflowMessageTextRelationshipId": UUIDAttribute, // 

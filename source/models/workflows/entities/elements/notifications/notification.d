@@ -14,7 +14,7 @@ class DWorkflowElementNotificationEntity : DOOPEntity {
         "action": StringAttribute, // 
         "enabled": StringAttribute, // 
         "elementTable": StringAttribute, // 
-        "elementId": UUIDAttribute, // 
+        "ElementId": ElementIdAttribute, // 
         "workflowUserValue": StringAttribute, // 
         "assignmentRelationType": StringAttribute, // 
         "assignmentType": StringAttribute, // 

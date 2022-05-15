@@ -13,7 +13,7 @@ class DWorkflowLineItemEntity : DOOPEntity {
       .addValues([
         "sequence": StringAttribute, //
         "expressionId": UUIDAttribute, //
-        "elementId": UUIDAttribute, //
+        "ElementId": ElementIdAttribute, //
         "workflowNumber": StringAttribute, //
         "relationship_WorkflowSubworkflowRelationshipId": UUIDAttribute, //
         "relationship_ConditionRelationshipId": UUIDAttribute, //

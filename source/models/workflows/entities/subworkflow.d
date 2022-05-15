@@ -11,17 +11,19 @@ class DWorkflowSubworkflowEntity : DOOPEntity {
 
     this
       .addValues([
+        ElementIdAttribute, //
+        WorkflowIdAttribute, //
+      ])
+      .addValues([
         "DocumentKeyField": StringAttribute, //
         "DocumentKeyTable": StringAttribute, //
-        "ElementId": UUIDAttribute, //
         "ElementName": StringAttribute, //
         "ElementType": StringAttribute, //
         "LineItemType": StringAttribute, //
-        "ParallelBranchElementId": UUIDAttribute, //
+        "ParallelBranchElementId": ElementIdAttribute, //
         "ParallelBranchName": StringAttribute, //
         "WaitForComplete": StringAttribute, //
         "WorkflowNumber": StringAttribute, //
-        "WorkflowId": UUIDAttribute, //
         "Relationship_WorkflowVersionRelationshipId": UUIDAttribute, //
         "Relationship_WorkflowParallelBranchRelationshipId": UUIDAttribute, //
         "backingTable_WorkflowSubWorkflowRelationshipId": UUIDAttribute, //

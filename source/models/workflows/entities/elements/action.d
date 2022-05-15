@@ -13,7 +13,7 @@ class DWorkflowElementActionEntity : DOOPEntity {
       .addValues([
         "enabled": StringAttribute, // 
         "isOutcome": StringAttribute, // 
-        "elementId": UUIDAttribute, // 
+        "ElementId": ElementIdAttribute, // 
         "relationship_WorkflowElementRelationshipId": UUIDAttribute, // 
         "backingTable_WorkflowActionTableRelationshipId": UUIDAttribute, // 
       ])

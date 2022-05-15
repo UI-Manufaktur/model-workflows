@@ -15,13 +15,13 @@ class DWorkflowElementLinkEntity : DOOPEntity {
         "sequence": StringAttribute, // 
         "sourceType": StringAttribute, // 
         "targetType": StringAttribute, // 
-        "sourceElementId": UUIDAttribute, // 
-        "targetElementId": UUIDAttribute, // 
+        "sourceElementId": ElementIdAttribute, // 
+        "targetElementId": ElementIdAttribute, // 
         "workflowId": UUIDAttribute, // 
         "outcome": StringAttribute, // 
         "outcomeName": StringAttribute, // 
         "parallelBranchName": StringAttribute, // 
-        "parallelBranchElementId": UUIDAttribute, // 
+        "parallelBranchElementId": ElementIdAttribute, // 
         "outcomeRecId": UUIDAttribute, // 
         "sourceSubworkflowElementLinkId": UUIDAttribute, // 
         "targetSubworkflowElementLinkId": UUIDAttribute, // 

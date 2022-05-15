@@ -11,16 +11,18 @@ class DWorkflowElementEntity : DOOPEntity {
 
     this
       .addValues([
-        "conditionId": UUIDAttribute, // 
+        ConditionIdAttribute, // 
+        ElementIdAttribute, // 
+        WorkflowIdAttribute, // 
+      ])
+      .addValues([
         "autoCompleteAction": StringAttribute, // 
-        "autoCompleteConditionId": UUIDAttribute, // 
-        "workflowId": UUIDAttribute, // 
-        "elementId": UUIDAttribute, // 
+        "autoCompleteConditionId": ConditionIdAttribute, // 
         "elementName": StringAttribute, // 
         "elementType": StringAttribute, // 
         "enableActionsInWorkList": StringAttribute, // 
         "runSubworkflow": StringAttribute, // 
-        "runSubworkflowConditionId": UUIDAttribute, // 
+        "runSubworkflowConditionId": ConditionIdAttribute, // 
         "finalApproverUser": StringAttribute, // 
         "required": StringAttribute, // 
         "runInParallel": StringAttribute, // 
@@ -32,7 +34,7 @@ class DWorkflowElementEntity : DOOPEntity {
         "maximumRuntimeTime": StringAttribute, // 
         "maximumRuntimeTimeZone": StringAttribute, // 
         "parallelBranchName": StringAttribute, // 
-        "parallelBranchElementId": UUIDAttribute, // 
+        "parallelBranchElementId": ElementIdAttribute, // 
         "maximumRuntimeDailyCalendar": StringAttribute, // 
         "maximumRuntimeDailyCalendarProvider": StringAttribute, // 
         "maximumRuntimeDailyIncludeFriday": StringAttribute, // 

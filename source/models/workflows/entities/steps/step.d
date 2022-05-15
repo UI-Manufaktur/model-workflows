@@ -13,7 +13,7 @@ class DWorkflowStepEntity : DOOPEntity {
       .addValues([
         "completionPolicy": StringAttribute, //
         "completionPolicyPercentage": StringAttribute, //
-        "elementId": UUIDAttribute, //
+        "ElementId": ElementIdAttribute, //
         "runStep": StringAttribute, //
         "runStepConditionId": UUIDAttribute, //
         "sequence": StringAttribute, //
