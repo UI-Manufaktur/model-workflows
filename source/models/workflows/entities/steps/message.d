@@ -11,7 +11,9 @@ class DWorkflowStepMessageEntity : DOOPEntity {
 
     this
       .addValues([
-        "languageId": UUIDAttribute, //
+        LanguageIdAttribute, //
+      ])
+      .addValues([
         "text": StringAttribute, //
         "stepId": UUIDAttribute, // wflStep").descriptions(["en":""]),
         "relationship_WorkflowStepRelationshipId": UUIDAttribute, //

@@ -11,23 +11,25 @@ class DWorkflowVersionNotificationEntity : DOOPEntity {
 
     this
       .addValues([
-        "Action": StringAttribute, //
-        "Enabled": StringAttribute, //
-        "WorkflowId": UUIDAttribute, //
-        "WorkflowUserValue": StringAttribute, //
-        "AssignmentRelationType": StringAttribute, //
-        "AssignmentType": StringAttribute, //
-        "HierarchyFilterConditionId": UUIDAttribute, //
-        "HierarchyFilterType": StringAttribute, //
-        "HierarchyProviderName": StringAttribute, //
-        "HierarchyStopConditionId": UUIDAttribute, //
-        "HierarchyTokenName": StringAttribute, //
-        "ParticipantProviderName": StringAttribute, //
-        "ParticipantTokenName": StringAttribute, //
-        "QueueProviderName": StringAttribute, //
-        "QueueTokenName": StringAttribute, //
-        "UserValue": StringAttribute, //
-        "Relationship_WorkflowVersionRelationshipId": UUIDAttribute, //
+        WorkflowIdAttribute, //
+      ])
+      .addValues([
+        "action": StringAttribute, //
+        "enabled": StringAttribute, //
+        "workflowUserValue": StringAttribute, //
+        "assignmentRelationType": StringAttribute, //
+        "assignmentType": StringAttribute, //
+        "hierarchyFilterConditionId": ConditionIdAttribute, //
+        "hierarchyFilterType": StringAttribute, //
+        "hierarchyProviderName": StringAttribute, //
+        "hierarchyStopConditionId": ConditionIdAttribute, //
+        "hierarchyTokenName": StringAttribute, //
+        "participantProviderName": StringAttribute, //
+        "participantTokenName": StringAttribute, //
+        "queueProviderName": StringAttribute, //
+        "queueTokenName": StringAttribute, //
+        "userValue": StringAttribute, //
+        "relationship_WorkflowVersionRelationshipId": UUIDAttribute, //
         "backingTable_WorkflowVersionNotificationTableRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_versionnotifications");

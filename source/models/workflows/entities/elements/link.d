@@ -11,13 +11,15 @@ class DWorkflowElementLinkEntity : DOOPEntity {
 
     this
       .addValues([
+        WorkflowIdAttribute, // 
+      ])
+      .addValues([
         "level": StringAttribute, // 
         "sequence": StringAttribute, // 
         "sourceType": StringAttribute, // 
         "targetType": StringAttribute, // 
         "sourceElementId": ElementIdAttribute, // 
         "targetElementId": ElementIdAttribute, // 
-        "workflowId": UUIDAttribute, // 
         "outcome": StringAttribute, // 
         "outcomeName": StringAttribute, // 
         "parallelBranchName": StringAttribute, // 

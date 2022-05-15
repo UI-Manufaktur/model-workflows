@@ -11,11 +11,13 @@ class DWorkflowWorkItemQueueAssignmentRuleEntity : DOOPEntity {
 
     this
       .addValues([
+        ExpressionIdAttribute, //
+      ])
+      .addValues([
         "EvaluationOrder": StringAttribute, //
         "Expression": StringAttribute, //
         "WorkflowWorkItemQueue": StringAttribute, //
         "WorkFlowWorkItemQueueExpressionDef": StringAttribute, //
-        "ExpressionId": UUIDAttribute, //
         "WorkItemQueueName": StringAttribute, //
         "WorkItemQueueType": StringAttribute, //
         "WorkItemType": StringAttribute, //

@@ -11,20 +11,22 @@ class DWorkflowStepEntity : DOOPEntity {
 
     this
       .addValues([
+        ElementIdAttribute, //
+      ])
+      .addValues([
         "completionPolicy": StringAttribute, //
         "completionPolicyPercentage": StringAttribute, //
-        "ElementId": ElementIdAttribute, //
         "runStep": StringAttribute, //
-        "runStepConditionId": UUIDAttribute, //
+        "runStepConditionId": ConditionIdAttribute, //
         "sequence": StringAttribute, //
         "stepId": UUIDAttribute, // WorkflowStepEntity").descriptions(["en":""]),
         "workflowUserValue": StringAttribute, //
         "assignmentRelationType": StringAttribute, //
         "assignmentType": StringAttribute, //
-        "hierarchyFilterConditionId": UUIDAttribute, //
+        "hierarchyFilterConditionId": ConditionIdAttribute, //
         "hierarchyFilterType": StringAttribute, //
         "hierarchyProviderName": StringAttribute, //
-        "hierarchyStopConditionId": UUIDAttribute, //
+        "hierarchyStopConditionId": ConditionIdAttribute, //
         "hierarchyTokenName": StringAttribute, //
         "participantProviderName": StringAttribute, //
         "participantTokenName": StringAttribute, //

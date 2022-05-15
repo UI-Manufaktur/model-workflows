@@ -11,9 +11,11 @@ class DWorkflowVersionEntity : DOOPEntity {
 
     this
       .addValues([
-        "activationConditionId": UUIDAttribute, //
+        WorkflowIdAttribute, //
+      ])
+      .addValues([
+        "activationConditionId": ConditionIdAttribute, //
         "activationConditionType": StringAttribute, //
-        "workflowId": UUIDAttribute, //
         "isActive": StringAttribute, //
         "owner": StringAttribute, //
         "valId": UUIDAttribute, //

@@ -11,8 +11,10 @@ class DWorkflowVersionNotesEntity : DOOPEntity {
 
     this
       .addValues([
+        WorkflowIdAttribute, //
+      ])
+      .addValues([
         "notes": StringAttribute, //
-        "workflowId": UUIDAttribute, //
         "relationship_WorkflowVersionRelationshipId": UUIDAttribute, //
         "backingTable_WorkflowVersionTableNotesRelationshipId": UUIDAttribute, //
       ])

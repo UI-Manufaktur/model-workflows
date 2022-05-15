@@ -11,7 +11,9 @@ class DWorkflowElementOutcomeMessageEntity : DOOPEntity {
 
     this
       .addValues([
-        "ChannelId": UUIDAttribute, // 
+        ChannelIdAttribute, // 
+      ])
+      .addValues([
         "ChannelDatabaseId": UUIDAttribute, // 
         "backingTable_WorkflowElementOutcomeMessageRelationshipId": UUIDAttribute, // 
       ])
