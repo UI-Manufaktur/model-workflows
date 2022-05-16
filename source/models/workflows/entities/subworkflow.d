@@ -15,17 +15,17 @@ class DWorkflowSubworkflowEntity : DOOPEntity {
         WorkflowIdAttribute, //
       ])
       .addValues([
-        "DocumentKeyField": StringAttribute, //
-        "DocumentKeyTable": StringAttribute, //
-        "ElementName": StringAttribute, //
-        "ElementType": StringAttribute, //
-        "LineItemType": StringAttribute, //
-        "ParallelBranchElementId": ElementIdAttribute, //
-        "ParallelBranchName": StringAttribute, //
-        "WaitForComplete": StringAttribute, //
-        "WorkflowNumber": StringAttribute, //
-        "Relationship_WorkflowVersionRelationshipId": UUIDAttribute, //
-        "Relationship_WorkflowParallelBranchRelationshipId": UUIDAttribute, //
+        "documentKeyField": StringAttribute, //
+        "documentKeyTable": StringAttribute, //
+        "elementName": StringAttribute, //
+        "elementType": StringAttribute, //
+        "lineItemType": StringAttribute, //
+        "parallelBranchElementId": ElementIdAttribute, //
+        "parallelBranchName": StringAttribute, //
+        "waitForComplete": StringAttribute, //
+        "workflowNumber": StringAttribute, //
+        "relationship_WorkflowVersionRelationshipId": UUIDAttribute, //
+        "relationship_WorkflowParallelBranchRelationshipId": UUIDAttribute, //
         "backingTable_WorkflowSubWorkflowRelationshipId": UUIDAttribute, //
       ])
       .registerPath("workflow_subworkflows");

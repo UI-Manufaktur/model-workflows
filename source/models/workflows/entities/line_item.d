@@ -11,9 +11,11 @@ class DWorkflowLineItemEntity : DOOPEntity {
 
     this
       .addValues([
+        ElementIdAttribute, //
+        ExpressionIdAttribute, //
+      ])
+      .addValues([
         "sequence": StringAttribute, //
-        "expressionId": UUIDAttribute, //
-        "ElementId": ElementIdAttribute, //
         "workflowNumber": StringAttribute, //
         "relationship_WorkflowSubworkflowRelationshipId": UUIDAttribute, //
         "relationship_ConditionRelationshipId": UUIDAttribute, //
