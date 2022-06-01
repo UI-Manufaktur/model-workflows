@@ -1,4 +1,4 @@
-module models.workflows.atributes.languageid;
+module models.workflows.attributes.uuids.entityids.languageid;
 
 @safe:
 import models.workflows;

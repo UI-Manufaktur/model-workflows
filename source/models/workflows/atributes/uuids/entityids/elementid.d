@@ -1,4 +1,4 @@
-module models.workflows.atributes.elementid;
+module models.workflows.attributes.uuids.entityids.elementid;
 
 @safe:
 import models.workflows;

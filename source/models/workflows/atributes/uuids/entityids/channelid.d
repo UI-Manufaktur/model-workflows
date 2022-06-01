@@ -1,4 +1,4 @@
-module models.workflows.atributes.channelid;
+module models.workflows.attributes.uuids.entityids.channelid;
 
 @safe:
 import models.workflows;

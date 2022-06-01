@@ -1,4 +1,4 @@
-module models.workflows.atributes.expressionid;
+module models.workflows.attributes.uuids.entityids.expressionid;
 
 @safe:
 import models.workflows;
